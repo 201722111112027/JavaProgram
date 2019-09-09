@@ -1,7 +1,6 @@
-package com.hubu.work.H2_JPA.pojo;
+package com.hubu.work.H2_MyBatis.pojo;
 
 import lombok.Data;
-import org.hibernate.annotations.Generated;
 
 import javax.persistence.*;
 

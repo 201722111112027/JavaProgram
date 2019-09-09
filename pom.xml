@@ -47,6 +47,28 @@
       <version>1.1.9</version>
     </dependency>
 
+    <!--分页插件 -->
+    <!--pagehelper-->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
+      <version>1.2.9</version>
+    </dependency>
+
+    <!--mybatis-->
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+
+    <!-- mybatis二级缓存整合redis -->
+    <dependency>
+      <groupId>com.github.liuanxin</groupId>
+      <artifactId>mybatis-redis-cache</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>

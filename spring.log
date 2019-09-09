@@ -567,3 +567,79 @@ org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or passwor
 2019-09-09 16:52:51.076 DEBUG 4568 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
 2019-09-09 16:52:51.096 DEBUG 4568 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
 2019-09-09 16:52:51.112 DEBUG 4568 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 6
+2019-09-09 17:03:27.597  INFO 10040 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 10040 (started by 22404 in D:\学习资料\JavaProgram-master)
+2019-09-09 17:03:27.597 DEBUG 10040 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-09 17:03:27.597  INFO 10040 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-09 17:03:27.687  INFO 10040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-09 17:03:27.687  INFO 10040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-09 17:03:29.577  INFO 10040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 17:03:29.607  INFO 10040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-09-09 17:03:30.017  INFO 10040 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ed583aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:03:30.567  INFO 10040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-09 17:03:30.587  INFO 10040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-09 17:03:30.587  INFO 10040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-09 17:03:30.727  INFO 10040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-09 17:03:30.727  INFO 10040 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3040 ms
+2019-09-09 17:03:30.817  INFO 10040 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-09 17:03:30.817  INFO 10040 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-09 17:03:30.877  INFO 10040 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-09 17:03:31.187 ERROR 10040 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-09 17:03:31.197  INFO 10040 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-09 17:03:31.477  INFO 10040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-09 17:03:31.607  INFO 10040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-09 17:03:31.717  INFO 10040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-09 17:03:31.717  INFO 10040 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-09 17:03:31.927  INFO 10040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-09 17:03:32.127  INFO 10040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-09 17:03:33.067  INFO 10040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-09 17:03:33.817  INFO 10040 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-09 17:03:33.987  WARN 10040 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-09 17:03:34.227  WARN 10040 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-09 17:03:34.357  INFO 10040 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-09 17:03:34.387  INFO 10040 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-09 17:03:34.417  INFO 10040 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-09 17:03:34.907  INFO 10040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-09 17:03:34.917  INFO 10040 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.34 seconds (JVM running for 10.022)
+2019-09-09 17:04:03.700  INFO 10040 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 17:04:03.700  INFO 10040 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-09 17:04:03.716  INFO 10040 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-09-09 17:22:19.406  INFO 2472 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 2472 (started by 22404 in D:\学习资料\JavaProgram-master)
+2019-09-09 17:22:19.406 DEBUG 2472 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-09 17:22:19.406  INFO 2472 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-09 17:22:19.536  INFO 2472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-09 17:22:19.536  INFO 2472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-09 17:22:22.085  INFO 2472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-09 17:22:22.117  INFO 2472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-09-09 17:22:22.721  INFO 2472 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42b77363] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 17:22:23.665  INFO 2472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-09 17:22:23.709  INFO 2472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-09 17:22:23.709  INFO 2472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-09 17:22:23.957  INFO 2472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-09 17:22:23.957  INFO 2472 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4421 ms
+2019-09-09 17:22:24.065  INFO 2472 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-09 17:22:24.069  INFO 2472 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-09 17:22:24.129  INFO 2472 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-09 17:22:24.693 ERROR 2472 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-09 17:22:24.697  INFO 2472 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-09 17:22:25.009  INFO 2472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-09 17:22:25.202  INFO 2472 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-09 17:22:25.362  INFO 2472 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-09 17:22:25.362  INFO 2472 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-09 17:22:25.624  INFO 2472 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-09 17:22:25.852  INFO 2472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-09 17:22:26.800  INFO 2472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-09 17:22:27.400  INFO 2472 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-09 17:22:27.576  WARN 2472 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-09 17:22:27.780  WARN 2472 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-09 17:22:27.892  INFO 2472 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-09 17:22:27.916  INFO 2472 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-09 17:22:27.952  INFO 2472 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-09 17:22:28.440  INFO 2472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-09 17:22:28.444  INFO 2472 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 9.993 seconds (JVM running for 12.203)
+2019-09-09 17:22:39.469  INFO 2472 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-09 17:22:39.469  INFO 2472 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-09 17:22:39.485  INFO 2472 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms

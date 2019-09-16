@@ -1,645 +1,129 @@
-2019-09-09 16:28:47.526  INFO 13984 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 13984 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 16:28:47.536 DEBUG 13984 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 16:28:47.536  INFO 13984 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 16:28:47.666  INFO 13984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 16:28:47.666  INFO 13984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 16:28:49.416  INFO 13984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 16:28:49.536  INFO 13984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 1 repository interfaces.
-2019-09-09 16:28:49.966  INFO 13984 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c5f4d02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 16:28:50.516  INFO 13984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 16:28:50.546  INFO 13984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 16:28:50.546  INFO 13984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 16:28:50.676  INFO 13984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 16:28:50.676  INFO 13984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3010 ms
-2019-09-09 16:28:50.766  INFO 13984 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 16:28:50.766  INFO 13984 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 16:28:50.946  INFO 13984 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 16:28:51.116 ERROR 13984 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 16:28:51.126  INFO 13984 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 16:28:51.416  INFO 13984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-09 16:28:51.556  INFO 13984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-09-16 16:43:08.962  INFO 13752 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 13752 (started by 22404 in D:\学习资料\JavaProgram-master)
+2019-09-16 16:43:08.992 DEBUG 13752 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-16 16:43:08.992  INFO 13752 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-09-16 16:43:09.299  INFO 13752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-16 16:43:09.299  INFO 13752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-16 16:43:13.738  INFO 13752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 16:43:13.767  INFO 13752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-09-16 16:43:14.683  INFO 13752 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$369b6b9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 16:43:15.345  INFO 13752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-16 16:43:15.389  INFO 13752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-16 16:43:15.390  INFO 13752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-16 16:43:15.593  INFO 13752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-16 16:43:15.593  INFO 13752 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6294 ms
+2019-09-16 16:43:15.694  INFO 13752 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-09-16 16:43:15.699  INFO 13752 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-09-16 16:43:15.762  INFO 13752 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-16 16:43:16.209 ERROR 13752 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-16 16:43:16.215  INFO 13752 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-16 16:43:16.498  INFO 13752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-16 16:43:16.659  INFO 13752 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-09-09 16:28:51.696  INFO 13984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-09-09 16:28:51.696  INFO 13984 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-09-09 16:28:51.946  INFO 13984 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-09-09 16:28:52.176  INFO 13984 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-09-09 16:28:53.006  INFO 13984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-09-09 16:28:53.686  INFO 13984 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-09 16:28:53.836  WARN 13984 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-09 16:28:54.106  WARN 13984 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-09 16:28:54.276  INFO 13984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-09 16:28:54.306  INFO 13984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-09 16:28:54.376  INFO 13984 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-09 16:28:54.946  INFO 13984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-09-09 16:28:54.946  INFO 13984 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.48 seconds (JVM running for 12.24)
-2019-09-09 16:29:05.549  INFO 13984 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-09 16:29:05.549  INFO 13984 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-09 16:29:05.561  INFO 13984 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-09-09 16:31:13.510  WARN 13984 --- [http-nio-8088-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /h2-console
-2019-09-09 16:31:13.710  WARN 13984 --- [http-nio-8088-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2019-09-09 16:35:08.456  INFO 8864 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 8864 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 16:35:08.460 DEBUG 8864 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 16:35:08.460  INFO 8864 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 16:35:08.548  INFO 8864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 16:35:08.548  INFO 8864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 16:35:10.287  INFO 8864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 16:35:10.367  INFO 8864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 1 repository interfaces.
-2019-09-09 16:35:10.775  INFO 8864 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b32785bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 16:35:11.255  INFO 8864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 16:35:11.303  INFO 8864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 16:35:11.303  INFO 8864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 16:35:11.443  INFO 8864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 16:35:11.443  INFO 8864 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2895 ms
-2019-09-09 16:35:11.527  INFO 8864 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 16:35:11.531  INFO 8864 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 16:35:11.587  INFO 8864 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 16:35:11.859 ERROR 8864 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 16:35:11.863  INFO 8864 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 16:35:12.362 ERROR 8864 --- [Druid-ConnectionPool-Create-1837323696] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:35:12.919 ERROR 8864 --- [Druid-ConnectionPool-Create-1837323696] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:35:14.501 ERROR 8864 --- [Druid-ConnectionPool-Create-1837323696] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:35:17.055 ERROR 8864 --- [Druid-ConnectionPool-Create-1837323696] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:35:21.614 ERROR 8864 --- [Druid-ConnectionPool-Create-1837323696] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:35:26.134 ERROR 8864 --- [Druid-ConnectionPool-Create-1837323696] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:01.319  INFO 5208 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 5208 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 16:36:01.327 DEBUG 5208 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 16:36:01.327  INFO 5208 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 16:36:01.411  INFO 5208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 16:36:01.415  INFO 5208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 16:36:02.908  INFO 5208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 16:36:02.984  INFO 5208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 repository interfaces.
-2019-09-09 16:36:03.391  INFO 5208 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1f86f11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 16:36:03.799  INFO 5208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 16:36:03.827  INFO 5208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 16:36:03.827  INFO 5208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 16:36:03.967  INFO 5208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 16:36:03.967  INFO 5208 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2552 ms
-2019-09-09 16:36:04.031  INFO 5208 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 16:36:04.035  INFO 5208 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 16:36:04.079  INFO 5208 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 16:36:04.331 ERROR 5208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 16:36:04.335  INFO 5208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 16:36:04.747 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:05.300 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:06.861 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:09.420 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:13.993 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:18.536 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:23.137 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:27.646 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:32.207 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:36.760 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:41.380 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:45.979 ERROR 5208 --- [Druid-ConnectionPool-Create-1614211178] com.alibaba.druid.pool.DruidDataSource   : create connection SQLException, url: jdbc:h2:D:\JavaProgram\H2Database/test;MODE=MySql;DB_CLOSE_DELAY=-1, errorCode 28000, state 28000
-
-org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.validateUserAndPassword(Engine.java:366) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:186) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:161) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Engine.createSession(Engine.java:31) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:149) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:143) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1515) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466) ~[druid-1.1.9.jar:1.1.9]
-
-2019-09-09 16:36:53.269  INFO 15296 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 15296 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 16:36:53.273 DEBUG 15296 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 16:36:53.273  INFO 15296 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 16:36:53.361  INFO 15296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 16:36:53.361  INFO 15296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 16:36:55.073  INFO 15296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 16:36:55.165  INFO 15296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 repository interfaces.
-2019-09-09 16:36:55.661  INFO 15296 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a068bb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 16:36:56.249  INFO 15296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 16:36:56.277  INFO 15296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 16:36:56.277  INFO 15296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 16:36:56.421  INFO 15296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 16:36:56.421  INFO 15296 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3060 ms
-2019-09-09 16:36:56.513  INFO 15296 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 16:36:56.517  INFO 15296 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 16:36:56.705  INFO 15296 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 16:36:56.864 ERROR 15296 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 16:36:56.868  INFO 15296 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 16:36:57.132  INFO 15296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-09 16:36:57.316  INFO 15296 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-09-16 16:43:16.775  INFO 13752 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-16 16:43:16.777  INFO 13752 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-16 16:43:16.964  INFO 13752 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-16 16:43:17.313  INFO 13752 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-16 16:43:18.682  INFO 13752 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 16:43:19.405  INFO 13752 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-16 16:43:19.660  WARN 13752 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-16 16:43:19.892  WARN 13752 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-16 16:43:20.023  INFO 13752 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-16 16:43:20.047  INFO 13752 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-16 16:43:20.077  INFO 13752 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-16 16:43:20.525  INFO 13752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-16 16:43:20.530  INFO 13752 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 13.771 seconds (JVM running for 18.045)
+2019-09-16 16:43:30.252  INFO 13752 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 16:43:30.252  INFO 13752 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-16 16:43:30.266  INFO 13752 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-09-16 16:43:35.440  WARN 13752 --- [http-nio-8088-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-09-16 17:00:02.391  INFO 7640 --- [main] com.hubu.work.WorkApplicationTests       : Starting WorkApplicationTests on DESKTOP-7R60MEB with PID 7640 (started by 22404 in D:\学习资料\JavaProgram-master)
+2019-09-16 17:00:02.392 DEBUG 7640 --- [main] com.hubu.work.WorkApplicationTests       : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-16 17:00:02.392  INFO 7640 --- [main] com.hubu.work.WorkApplicationTests       : The following profiles are active: dev
+2019-09-16 17:00:05.379  INFO 7640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:00:05.418  INFO 7640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-09-16 17:00:06.171  INFO 7640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a24d33cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:00:06.281  INFO 7640 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-16 17:00:06.565 ERROR 7640 --- [main] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-16 17:00:06.573  INFO 7640 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-16 17:00:07.338  INFO 7640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-09-09 16:36:57.424  INFO 15296 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-09-09 16:36:57.428  INFO 15296 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-09-09 16:36:57.628  INFO 15296 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-09-09 16:36:57.820  INFO 15296 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-09-09 16:36:58.824  INFO 15296 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-09-09 16:36:59.812  INFO 15296 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-09 16:37:00.036  WARN 15296 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-09 16:37:00.332  WARN 15296 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-09 16:37:00.504  INFO 15296 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-09 16:37:00.536  INFO 15296 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-09 16:37:00.588  INFO 15296 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-09 16:37:01.124  INFO 15296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-09-09 16:37:01.128  INFO 15296 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.687 seconds (JVM running for 10.33)
-2019-09-09 16:37:09.392  INFO 15296 --- [http-nio-8088-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-09 16:37:09.392  INFO 15296 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-09 16:37:09.408  INFO 15296 --- [http-nio-8088-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2019-09-09 16:52:34.961  INFO 4568 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 4568 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 16:52:34.977 DEBUG 4568 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 16:52:34.977  INFO 4568 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 16:52:35.093  INFO 4568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 16:52:35.097  INFO 4568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 16:52:37.075  INFO 4568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 16:52:37.163  INFO 4568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 1 repository interfaces.
-2019-09-09 16:52:37.619  INFO 4568 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fd3d0e51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 16:52:38.147  INFO 4568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 16:52:38.199  INFO 4568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 16:52:38.199  INFO 4568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 16:52:38.331  INFO 4568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 16:52:38.331  INFO 4568 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3234 ms
-2019-09-09 16:52:38.411  INFO 4568 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 16:52:38.411  INFO 4568 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 16:52:38.579  INFO 4568 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 16:52:38.772 ERROR 4568 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 16:52:38.776  INFO 4568 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 16:52:39.068  INFO 4568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-09 16:52:39.216  INFO 4568 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-09-16 17:00:07.486  INFO 7640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-16 17:00:07.489  INFO 7640 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-16 17:00:07.751  INFO 7640 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-16 17:00:08.553  INFO 7640 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-16 17:00:09.586  INFO 7640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:00:10.998  INFO 7640 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-16 17:00:11.878  WARN 7640 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-16 17:00:12.346  WARN 7640 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-16 17:00:12.574  INFO 7640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-16 17:00:12.604  INFO 7640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-16 17:00:12.633  INFO 7640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-16 17:00:12.817  INFO 7640 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-16 17:00:12.845  INFO 7640 --- [main] com.hubu.work.WorkApplicationTests       : Started WorkApplicationTests in 11.847 seconds (JVM running for 13.965)
+2019-09-16 17:00:13.037 DEBUG 7640 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : ==>  Preparing: select * from words 
+2019-09-16 17:00:13.057 DEBUG 7640 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : ==> Parameters: 
+2019-09-16 17:00:13.073 DEBUG 7640 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : <==      Total: 1
+2019-09-16 17:00:13.106  INFO 7640 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:00:13.112  INFO 7640 --- [Thread-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-09-16 17:01:33.151  INFO 184 --- [main] com.hubu.work.WorkApplicationTests       : Starting WorkApplicationTests on DESKTOP-7R60MEB with PID 184 (started by 22404 in D:\学习资料\JavaProgram-master)
+2019-09-16 17:01:33.162 DEBUG 184 --- [main] com.hubu.work.WorkApplicationTests       : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-16 17:01:33.162  INFO 184 --- [main] com.hubu.work.WorkApplicationTests       : The following profiles are active: dev
+2019-09-16 17:01:35.574  INFO 184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:01:35.606  INFO 184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-09-16 17:01:36.192  INFO 184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1880ba1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:01:36.292  INFO 184 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-16 17:01:36.574 ERROR 184 --- [main] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-16 17:01:36.583  INFO 184 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-16 17:01:37.425  INFO 184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-09-09 16:52:39.320  INFO 4568 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-09-09 16:52:39.320  INFO 4568 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-09-09 16:52:39.528  INFO 4568 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-09-09 16:52:39.772  INFO 4568 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-09-09 16:52:40.662  INFO 4568 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-09-09 16:52:41.306  INFO 4568 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-09 16:52:41.442  WARN 4568 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-09 16:52:42.335  WARN 4568 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-09 16:52:42.441  INFO 4568 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-09 16:52:42.465  INFO 4568 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-09 16:52:42.501  INFO 4568 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-09 16:52:42.697  INFO 4568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-09-09 16:52:42.701  INFO 4568 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.628 seconds (JVM running for 10.477)
-2019-09-09 16:52:45.457  INFO 4568 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-09 16:52:45.461  INFO 4568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-09 16:52:45.473  INFO 4568 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-09-09 16:52:51.076 DEBUG 4568 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-09-09 16:52:51.096 DEBUG 4568 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-09-09 16:52:51.112 DEBUG 4568 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 6
-2019-09-09 17:03:27.597  INFO 10040 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 10040 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 17:03:27.597 DEBUG 10040 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 17:03:27.597  INFO 10040 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 17:03:27.687  INFO 10040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 17:03:27.687  INFO 10040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 17:03:29.577  INFO 10040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 17:03:29.607  INFO 10040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-09-09 17:03:30.017  INFO 10040 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ed583aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 17:03:30.567  INFO 10040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 17:03:30.587  INFO 10040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 17:03:30.587  INFO 10040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 17:03:30.727  INFO 10040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 17:03:30.727  INFO 10040 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3040 ms
-2019-09-09 17:03:30.817  INFO 10040 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 17:03:30.817  INFO 10040 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 17:03:30.877  INFO 10040 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 17:03:31.187 ERROR 10040 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 17:03:31.197  INFO 10040 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 17:03:31.477  INFO 10040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-09 17:03:31.607  INFO 10040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-09-16 17:01:37.617  INFO 184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-16 17:01:37.621  INFO 184 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-16 17:01:38.016  INFO 184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-16 17:01:38.891  INFO 184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-16 17:01:39.852  INFO 184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:01:41.043  INFO 184 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-16 17:01:41.982  WARN 184 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-16 17:01:42.534  WARN 184 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-16 17:01:42.718  INFO 184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-16 17:01:42.760  INFO 184 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-16 17:01:42.793  INFO 184 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-16 17:01:42.957  INFO 184 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-16 17:01:42.991  INFO 184 --- [main] com.hubu.work.WorkApplicationTests       : Started WorkApplicationTests in 10.851 seconds (JVM running for 12.868)
+2019-09-16 17:01:43.175 DEBUG 184 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : ==>  Preparing: select * from words 
+2019-09-16 17:01:43.189 DEBUG 184 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : ==> Parameters: 
+2019-09-16 17:01:43.202 DEBUG 184 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : <==      Total: 1
+2019-09-16 17:01:43.225  INFO 184 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:01:43.235  INFO 184 --- [Thread-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-09-16 17:06:17.582  INFO 2600 --- [main] com.hubu.work.WorkApplicationTests       : Starting WorkApplicationTests on DESKTOP-7R60MEB with PID 2600 (started by 22404 in D:\学习资料\JavaProgram-master)
+2019-09-16 17:06:17.582 DEBUG 2600 --- [main] com.hubu.work.WorkApplicationTests       : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-09-16 17:06:17.582  INFO 2600 --- [main] com.hubu.work.WorkApplicationTests       : The following profiles are active: dev
+2019-09-16 17:06:20.234  INFO 2600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:06:20.261  INFO 2600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-09-16 17:06:20.906  INFO 2600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cf3ec91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:06:20.995  INFO 2600 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-09-16 17:06:21.259 ERROR 2600 --- [main] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-09-16 17:06:21.269  INFO 2600 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-09-16 17:06:22.118  INFO 2600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-09-09 17:03:31.717  INFO 10040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-09-09 17:03:31.717  INFO 10040 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-09-09 17:03:31.927  INFO 10040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-09-09 17:03:32.127  INFO 10040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-09-09 17:03:33.067  INFO 10040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-09-09 17:03:33.817  INFO 10040 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-09 17:03:33.987  WARN 10040 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-09 17:03:34.227  WARN 10040 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-09 17:03:34.357  INFO 10040 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-09 17:03:34.387  INFO 10040 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-09 17:03:34.417  INFO 10040 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-09 17:03:34.907  INFO 10040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-09-09 17:03:34.917  INFO 10040 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.34 seconds (JVM running for 10.022)
-2019-09-09 17:04:03.700  INFO 10040 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-09 17:04:03.700  INFO 10040 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-09 17:04:03.716  INFO 10040 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2019-09-09 17:22:19.406  INFO 2472 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 2472 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-09-09 17:22:19.406 DEBUG 2472 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-09-09 17:22:19.406  INFO 2472 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-09-09 17:22:19.536  INFO 2472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-09 17:22:19.536  INFO 2472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-09 17:22:22.085  INFO 2472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-09-09 17:22:22.117  INFO 2472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2019-09-09 17:22:22.721  INFO 2472 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42b77363] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-09-09 17:22:23.665  INFO 2472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-09-09 17:22:23.709  INFO 2472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-09 17:22:23.709  INFO 2472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-09-09 17:22:23.957  INFO 2472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-09 17:22:23.957  INFO 2472 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4421 ms
-2019-09-09 17:22:24.065  INFO 2472 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-09-09 17:22:24.069  INFO 2472 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-09-09 17:22:24.129  INFO 2472 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-09-09 17:22:24.693 ERROR 2472 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-09-09 17:22:24.697  INFO 2472 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-09-09 17:22:25.009  INFO 2472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-09 17:22:25.202  INFO 2472 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-09-09 17:22:25.362  INFO 2472 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-09-09 17:22:25.362  INFO 2472 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-09-09 17:22:25.624  INFO 2472 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-09-09 17:22:25.852  INFO 2472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-09-09 17:22:26.800  INFO 2472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-09-09 17:22:27.400  INFO 2472 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-09-09 17:22:27.576  WARN 2472 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-09-09 17:22:27.780  WARN 2472 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-09-09 17:22:27.892  INFO 2472 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-09-09 17:22:27.916  INFO 2472 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-09-09 17:22:27.952  INFO 2472 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-09-09 17:22:28.440  INFO 2472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-09-09 17:22:28.444  INFO 2472 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 9.993 seconds (JVM running for 12.203)
-2019-09-09 17:22:39.469  INFO 2472 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-09 17:22:39.469  INFO 2472 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-09 17:22:39.485  INFO 2472 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-09-16 17:06:22.260  INFO 2600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-16 17:06:22.263  INFO 2600 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-16 17:06:22.527  INFO 2600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-16 17:06:23.235  INFO 2600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-09-16 17:06:24.204  INFO 2600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:06:25.680  INFO 2600 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-16 17:06:26.670  WARN 2600 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-16 17:06:27.111  WARN 2600 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-09-16 17:06:27.283  INFO 2600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-16 17:06:27.327  INFO 2600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-16 17:06:27.370  INFO 2600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-16 17:06:27.555  INFO 2600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-09-16 17:06:27.578  INFO 2600 --- [main] com.hubu.work.WorkApplicationTests       : Started WorkApplicationTests in 10.964 seconds (JVM running for 12.814)
+2019-09-16 17:06:27.755 DEBUG 2600 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : ==>  Preparing: select * from words 
+2019-09-16 17:06:27.775 DEBUG 2600 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : ==> Parameters: 
+2019-09-16 17:06:27.795 DEBUG 2600 --- [main] c.h.w.H.m.WordsMapper.queryWordsById     : <==      Total: 1
+2019-09-16 17:06:27.818  INFO 2600 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:06:27.828  INFO 2600 --- [Thread-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

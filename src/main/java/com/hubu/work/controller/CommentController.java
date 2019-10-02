@@ -1,15 +1,12 @@
 package com.hubu.work.controller;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
 import com.hubu.work.H2_MyBatis.pojo.Comment;
 import com.hubu.work.service.CommentService;
-import com.hubu.work.utils.PageBean;
+import com.hubu.work.utils.Utils;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -18,6 +15,9 @@ import java.util.List;
 public class CommentController {
     @Autowired
     CommentService commentService;
+
+    @Autowired
+    Utils utils;
 
     @ApiOperation("查询全部评论")
     @PostMapping("/selectAllComments")
@@ -29,6 +29,8 @@ public class CommentController {
     @ApiOperation("评论歌曲")
     @PostMapping("/addComments")
     public void addComments(@RequestBody Comment comment){
+        comment.setPraisePoints(0);
+        comment.setPublicationTime(utils.getTime());
         commentService.addComment(comment);
 
     }

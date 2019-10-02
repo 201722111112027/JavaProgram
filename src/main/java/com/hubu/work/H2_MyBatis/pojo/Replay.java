@@ -1,19 +1,13 @@
 package com.hubu.work.H2_MyBatis.pojo;
 
-public class Comment {
+
+public class Replay {
     private Integer id;
     private String author;
     private String content;
+    private String replyObject;
     private Integer praisePoints;
     private String publicationTime;
-
-    public String getPublicationTime() {
-        return publicationTime;
-    }
-
-    public void setPublicationTime(String publicationTime) {
-        this.publicationTime = publicationTime;
-    }
 
     public Integer getId() {
         return id;
@@ -39,11 +33,27 @@ public class Comment {
         this.content = content;
     }
 
+    public String getReplyObject() {
+        return replyObject;
+    }
+
+    public void setReplyObject(String replyObject) {
+        this.replyObject = replyObject;
+    }
+
     public Integer getPraisePoints() {
         return praisePoints;
     }
 
     public void setPraisePoints(Integer praisePoints) {
         this.praisePoints = praisePoints;
+    }
+
+    public String getPublicationTime() {
+        return publicationTime;
+    }
+
+    public void setPublicationTime(String publicationTime) {
+        this.publicationTime = publicationTime;
     }
 }

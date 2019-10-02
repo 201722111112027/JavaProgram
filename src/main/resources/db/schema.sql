@@ -23,6 +23,7 @@ CREATE TABLE `comment` (
                        `author` varchar(50) DEFAULT NULL comment '作者',
                        `content` varchar(250) DEFAULT NULL comment '评论内容',
                        `praisePoints` varchar(250) DEFAULT NULL comment '点赞数',
+                       `publicationTime` varchar(250) DEFAULT NULL comment '发表时间',
                        PRIMARY KEY (`id`)
 );
 
@@ -33,6 +34,7 @@ CREATE TABLE `replay` (
                          `content` varchar(250) DEFAULT NULL comment '回复内容',
                          `replyObject` varchar(250) DEFAULT NULL comment '回复对象',
                          `praisePoints` varchar(250) DEFAULT NULL comment '点赞数',
+                         `publicationTime` varchar(250) DEFAULT NULL comment '发表时间',
                          PRIMARY KEY (`id`)
 );
 

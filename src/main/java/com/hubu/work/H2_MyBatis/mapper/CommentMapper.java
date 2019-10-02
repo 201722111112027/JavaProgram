@@ -1,6 +1,5 @@
 package com.hubu.work.H2_MyBatis.mapper;
 
-import com.github.pagehelper.Page;
 import com.hubu.work.H2_MyBatis.pojo.Comment;
 import org.apache.ibatis.annotations.Mapper;
 

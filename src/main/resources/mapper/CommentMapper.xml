@@ -8,7 +8,7 @@
 
     <insert id="addComment">
         insert into comment (id,author,content,praisePoints)
-        values (#{id},#{author},#{content} ,#{praisePoints} )
+        values (#{id},#{author},#{content} ,#{praisePoints},#{publicationTime}  )
     </insert>
 
 </mapper>

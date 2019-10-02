@@ -7,4 +7,5 @@ INSERT INTO `user` (id, username, password, nickname) VALUES ('6', 'user4', '123
 
 INSERT INTO `words` (id, content) VALUES ('1', 'music/words');
 
+
 COMMIT;

@@ -16,3 +16,24 @@ CREATE TABLE `words` (
                       `content` varchar(50) DEFAULT NULL comment '内容',
                       PRIMARY KEY (`id`)
 );
+
+DROP TABLE IF EXISTS `comment`;
+CREATE TABLE `comment` (
+                       `id` bigint(20) NOT NULL AUTO_INCREMENT,
+                       `author` varchar(50) DEFAULT NULL comment '作者',
+                       `content` varchar(250) DEFAULT NULL comment '评论内容',
+                       `praisePoints` varchar(250) DEFAULT NULL comment '点赞数',
+                       PRIMARY KEY (`id`)
+);
+
+DROP TABLE IF EXISTS `replay`;
+CREATE TABLE `replay` (
+                         `id` bigint(20) NOT NULL AUTO_INCREMENT,
+                         `author` varchar(50) DEFAULT NULL comment '作者',
+                         `content` varchar(250) DEFAULT NULL comment '回复内容',
+                         `replyObject` varchar(250) DEFAULT NULL comment '回复对象',
+                         `praisePoints` varchar(250) DEFAULT NULL comment '点赞数',
+                         PRIMARY KEY (`id`)
+);
+
+

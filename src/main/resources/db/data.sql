@@ -5,7 +5,5 @@ INSERT INTO `user` (id, username, password, nickname) VALUES ('4', 'user2', '123
 INSERT INTO `user` (id, username, password, nickname) VALUES ('5', 'user3', '1234', 'user');
 INSERT INTO `user` (id, username, password, nickname) VALUES ('6', 'user4', '1234', 'user');
 
-INSERT INTO `words` (id, content) VALUES ('1', 'music/words');
-
 
 COMMIT;

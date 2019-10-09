@@ -14,7 +14,7 @@ CREATE TABLE `user`
 );
 
 -- 歌单表
-DROP TABLE IF EXISTS `song_list`;
+DROP TABLE IF EXISTS `song_sheet`;
 CREATE TABLE `song_sheet`
 (
   `id`      bigint(20) NOT NULL AUTO_INCREMENT,

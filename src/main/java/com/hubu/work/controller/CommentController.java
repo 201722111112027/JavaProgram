@@ -23,6 +23,7 @@ public class CommentController {
     @PostMapping("/selectAllComments")
     public List<Comment> selectAllComments(){
         List<Comment> comments=commentService.selectAllComments();
+        System.out.printf("123");
         return comments;
     }
 

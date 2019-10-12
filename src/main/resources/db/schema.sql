@@ -9,7 +9,7 @@ CREATE TABLE `user`
   `password`   varchar(255) DEFAULT NULL comment '密码',
   `nickname`   varchar(50)  DEFAULT NULL comment '用户昵称',
   `head_portrait` varchar(200) DEFAULT '' comment '头像',
-  `personal——signature` varchar(200) DEFAULT '' comment '个性签名',
+  `personal_signature` varchar(200) DEFAULT '' comment '个性签名',
   PRIMARY KEY (`id`)
 );
 

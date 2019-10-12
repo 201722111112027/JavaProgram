@@ -39,7 +39,7 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.hubu.work.H2_MyBatis.pojo
   configuration:
-    map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: false
     cache-enabled: true
 
 pagehelper:

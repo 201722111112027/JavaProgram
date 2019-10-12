@@ -15,4 +15,14 @@ public class UserService {
   public List<User> selectAll(){
     return userMapper.selectAll();
   }
+
+  //用户登录功能
+  public int login(User user){
+    return userMapper.login(user);
+  }
+
+  //用户注册功能
+  public int registerUser(User user){
+    return userMapper.registerUser(user);
+  }
 }

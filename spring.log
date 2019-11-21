@@ -1,988 +1,114 @@
-2019-10-12 15:54:33.960  INFO 9820 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 9820 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 15:54:33.968 DEBUG 9820 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 15:54:33.968  INFO 9820 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 15:54:34.094  INFO 9820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 15:54:34.094  INFO 9820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 15:54:36.109  INFO 9820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 15:54:36.137  INFO 9820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
-2019-10-12 15:54:36.924  INFO 9820 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd92d192] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 15:54:37.495  INFO 9820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 15:54:37.526  INFO 9820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 15:54:37.527  INFO 9820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 15:54:37.653  INFO 9820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 15:54:37.653  INFO 9820 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3559 ms
-2019-10-12 15:54:37.783  INFO 9820 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 15:54:37.784  INFO 9820 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 15:54:37.904  INFO 9820 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 15:54:38.247 ERROR 9820 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 15:54:38.248  INFO 9820 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 15:54:38.549  INFO 9820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 15:54:38.651  INFO 9820 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-11-21 17:54:18.840  INFO 35072 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 35072 (D:\JavaProgram-master\target\classes started by 22404 in D:\JavaProgram-master)
+2019-11-21 17:54:18.860 DEBUG 35072 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 17:54:18.862  INFO 35072 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-11-21 17:54:19.040  INFO 35072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 17:54:19.043  INFO 35072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 17:54:22.099  INFO 35072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-21 17:54:22.189  INFO 35072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-21 17:54:23.303  INFO 35072 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9270939] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-21 17:54:24.276  INFO 35072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-11-21 17:54:24.344  INFO 35072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 17:54:24.344  INFO 35072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-11-21 17:54:24.756  INFO 35072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 17:54:24.756  INFO 35072 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5713 ms
+2019-11-21 17:54:24.899  INFO 35072 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-11-21 17:54:24.904  INFO 35072 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-11-21 17:54:25.011  INFO 35072 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-21 17:54:25.328 ERROR 35072 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-11-21 17:54:25.334  INFO 35072 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-21 17:54:26.188  INFO 35072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 17:54:26.339  INFO 35072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-10-12 15:54:38.748  INFO 9820 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 15:54:38.749  INFO 9820 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 15:54:39.014  INFO 9820 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 15:54:39.202  INFO 9820 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 15:54:39.949  INFO 9820 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 15:54:40.584  INFO 9820 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 15:54:40.727  WARN 9820 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 15:54:40.961  WARN 9820 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 15:54:41.068  INFO 9820 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 15:54:41.088  INFO 9820 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 15:54:41.119  INFO 9820 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 15:54:41.579  INFO 9820 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 15:54:41.620  INFO 9820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 15:54:41.623  INFO 9820 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.623 seconds (JVM running for 12.2)
-2019-10-12 15:55:02.542  INFO 9820 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 15:55:02.547  INFO 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 15:55:02.592  INFO 9820 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
-2019-10-12 16:05:05.846  WARN 9820 --- [http-nio-8088-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2019-10-12 16:16:45.626  INFO 15756 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 15756 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:16:45.629 DEBUG 15756 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:16:45.629  INFO 15756 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:16:45.760  INFO 15756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:16:45.764  INFO 15756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:16:47.804  INFO 15756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:16:47.822  INFO 15756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-10-12 16:16:48.193  INFO 15756 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2c9c2f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:16:48.615  INFO 15756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:16:48.641  INFO 15756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:16:48.642  INFO 15756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:16:48.764  INFO 15756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:16:48.768  INFO 15756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3003 ms
-2019-10-12 16:16:48.827  INFO 15756 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:16:48.837  INFO 15756 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:16:48.902  INFO 15756 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:16:49.201 ERROR 15756 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:16:49.205  INFO 15756 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:16:49.482  INFO 15756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:16:49.585  INFO 15756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-11-21 17:54:26.474  INFO 35072 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-21 17:54:26.476  INFO 35072 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-21 17:54:26.769  INFO 35072 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-21 17:54:27.203  INFO 35072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-11-21 17:54:27.953  INFO 35072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-21 17:54:31.793  INFO 35072 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-21 17:54:32.561  WARN 35072 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-21 17:54:33.897  WARN 35072 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-21 17:54:34.199  INFO 35072 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-21 17:54:34.288  INFO 35072 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-21 17:54:34.607  INFO 35072 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-21 17:54:34.986  INFO 35072 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-11-21 17:54:35.257  INFO 35072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-11-21 17:54:35.288  INFO 35072 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 18.237 seconds (JVM running for 23.398)
+2019-11-21 17:57:09.280  INFO 35072 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 17:57:09.288  INFO 35072 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 17:57:09.376  INFO 35072 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 87 ms
+2019-11-21 18:17:03.235  INFO 25304 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 25304 (D:\JavaProgram-master\target\classes started by 22404 in D:\JavaProgram-master)
+2019-11-21 18:17:03.241 DEBUG 25304 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:17:03.242  INFO 25304 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-11-21 18:17:03.362  INFO 25304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 18:17:03.363  INFO 25304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 18:17:05.223  INFO 25304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-21 18:17:05.248  INFO 25304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-11-21 18:17:05.715  INFO 25304 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc02ec31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-21 18:17:06.234  INFO 25304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-11-21 18:17:06.266  INFO 25304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 18:17:06.267  INFO 25304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-11-21 18:17:06.446  INFO 25304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 18:17:06.446  INFO 25304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3083 ms
+2019-11-21 18:17:06.546  INFO 25304 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-11-21 18:17:06.552  INFO 25304 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-11-21 18:17:06.723  INFO 25304 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-21 18:17:07.033 ERROR 25304 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-11-21 18:17:07.036  INFO 25304 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-21 18:17:07.386  INFO 25304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 18:17:07.545  INFO 25304 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-10-12 16:16:49.670  INFO 15756 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:16:49.672  INFO 15756 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:16:49.883  INFO 15756 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:16:50.064  INFO 15756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:16:50.213  WARN 15756 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.hubu.work.H2_MyBatis.pojo.User
-2019-10-12 16:16:50.215  INFO 15756 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-10-12 16:16:50.220  INFO 15756 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-10-12 16:16:50.235  INFO 15756 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-10-12 16:16:50.255 ERROR 15756 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.hubu.work.H2_MyBatis.pojo.User
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at com.hubu.work.WorkApplication.main(WorkApplication.java:11) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.hubu.work.H2_MyBatis.pojo.User
-	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 21 common frames omitted
-
-2019-10-12 16:17:41.588  INFO 14508 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 14508 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:17:41.599 DEBUG 14508 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:17:41.599  INFO 14508 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:17:41.699  INFO 14508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:17:41.699  INFO 14508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:17:43.553  INFO 14508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:17:43.573  INFO 14508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-12 16:17:43.950  INFO 14508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9efe2cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:17:44.320  INFO 14508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:17:44.343  INFO 14508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:17:44.343  INFO 14508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:17:44.442  INFO 14508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:17:44.445  INFO 14508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2746 ms
-2019-10-12 16:17:44.496  INFO 14508 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:17:44.497  INFO 14508 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:17:44.527  INFO 14508 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:17:44.791 ERROR 14508 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:17:44.801  INFO 14508 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:17:45.050  INFO 14508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:17:45.173  INFO 14508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-11-21 18:17:07.667  INFO 25304 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-21 18:17:07.669  INFO 25304 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-21 18:17:07.912  INFO 25304 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-21 18:17:08.163  INFO 25304 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-11-21 18:17:08.676  INFO 25304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-21 18:17:09.519  INFO 25304 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-21 18:17:09.702  WARN 25304 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-21 18:17:09.964  WARN 25304 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-21 18:17:10.086  INFO 25304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-21 18:17:10.106  INFO 25304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-21 18:17:10.142  INFO 25304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-21 18:17:10.326  INFO 25304 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-11-21 18:17:10.390  INFO 25304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-11-21 18:17:10.395  INFO 25304 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.363 seconds (JVM running for 10.511)
+2019-11-21 18:17:15.050  INFO 25304 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 18:17:15.051  INFO 25304 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 18:17:15.066  INFO 25304 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-11-21 18:25:51.441  INFO 31920 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 31920 (D:\JavaProgram-master\target\classes started by 22404 in D:\JavaProgram-master)
+2019-11-21 18:25:51.447 DEBUG 31920 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+2019-11-21 18:25:51.448  INFO 31920 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
+2019-11-21 18:25:51.718  INFO 31920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 18:25:51.719  INFO 31920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 18:25:54.786  INFO 31920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-21 18:25:54.824  INFO 31920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-11-21 18:25:55.396  INFO 31920 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c730959] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-21 18:25:56.169  INFO 31920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-11-21 18:25:56.242  INFO 31920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 18:25:56.243  INFO 31920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-11-21 18:25:56.534  INFO 31920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 18:25:56.535  INFO 31920 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4816 ms
+2019-11-21 18:25:56.633  INFO 31920 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
+2019-11-21 18:25:56.636  INFO 31920 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2019-11-21 18:25:56.683  INFO 31920 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-21 18:25:56.967 ERROR 31920 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2019-11-21 18:25:56.970  INFO 31920 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-21 18:25:57.264  INFO 31920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 18:25:57.387  INFO 31920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-10-12 16:17:45.268  INFO 14508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:17:45.270  INFO 14508 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:17:45.402  INFO 14508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:17:45.557  INFO 14508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:17:45.873  INFO 14508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 16:17:46.471  INFO 14508 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 16:17:46.651  WARN 14508 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 16:17:46.839  WARN 14508 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 16:17:46.953  INFO 14508 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 16:17:46.975  INFO 14508 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 16:17:47.000  INFO 14508 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 16:17:47.172  INFO 14508 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 16:17:47.212  INFO 14508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 16:17:47.214  INFO 14508 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.734 seconds (JVM running for 9.813)
-2019-10-12 16:18:09.790  INFO 14508 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 16:18:09.790  INFO 14508 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 16:18:09.802  INFO 14508 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-10-12 16:18:29.054 DEBUG 14508 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.login          : ==>  Preparing: select * from user where username=? and password=?; 
-2019-10-12 16:18:29.070 DEBUG 14508 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.login          : ==> Parameters: root(String), 1234(String)
-2019-10-12 16:18:29.082 DEBUG 14508 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.login          : <==      Total: 1
-2019-10-12 16:39:46.136  INFO 4608 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 4608 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:39:46.136 DEBUG 4608 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:39:46.147  INFO 4608 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:39:46.291  INFO 4608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:39:46.291  INFO 4608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:39:47.836  INFO 4608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:39:47.857  INFO 4608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-12 16:39:48.202  INFO 4608 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac529713] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:39:48.663  INFO 4608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:39:48.696  INFO 4608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:39:48.697  INFO 4608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:39:48.853  INFO 4608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:39:48.853  INFO 4608 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2550 ms
-2019-10-12 16:39:48.935  INFO 4608 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:39:48.939  INFO 4608 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:39:48.980  INFO 4608 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:39:49.238 ERROR 4608 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:39:49.242  INFO 4608 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:39:49.515  INFO 4608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:39:49.521  WARN 4608 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script from resource [class path resource [db/data.sql]]; nested exception is java.lang.IllegalArgumentException: 'script' must not be null or empty
-2019-10-12 16:39:49.525  INFO 4608 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-10-12 16:39:49.541  INFO 4608 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-10-12 16:39:49.553 ERROR 4608 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script from resource [class path resource [db/data.sql]]; nested exception is java.lang.IllegalArgumentException: 'script' must not be null or empty
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:743) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:390) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1214) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1203) [spring-boot-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at com.hubu.work.WorkApplication.main(WorkApplication.java:11) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script from resource [class path resource [db/data.sql]]; nested exception is java.lang.IllegalArgumentException: 'script' must not be null or empty
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 33 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script from resource [class path resource [db/data.sql]]; nested exception is java.lang.IllegalArgumentException: 'script' must not be null or empty
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1119) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:411) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:344) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:337) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerPostProcessor.postProcessAfterInitialization(DataSourceInitializerPostProcessor.java:52) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:429) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 43 common frames omitted
-Caused by: org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script from resource [class path resource [db/data.sql]]; nested exception is java.lang.IllegalArgumentException: 'script' must not be null or empty
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:532) ~[spring-jdbc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:238) ~[spring-jdbc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48) ~[spring-jdbc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:89) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:37) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.initialize(DataSourceInitializerInvoker.java:71) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:64) ~[spring-boot-autoconfigure-2.1.7.RELEASE.jar:2.1.7.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 57 common frames omitted
-Caused by: java.lang.IllegalArgumentException: 'script' must not be null or empty
-	at org.springframework.util.Assert.hasText(Assert.java:284) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.jdbc.datasource.init.ScriptUtils.splitSqlScript(ScriptUtils.java:173) ~[spring-jdbc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:479) ~[spring-jdbc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 72 common frames omitted
-
-2019-10-12 16:41:23.201  INFO 13724 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 13724 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:41:23.212 DEBUG 13724 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:41:23.212  INFO 13724 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:41:23.321  INFO 13724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:41:23.321  INFO 13724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:41:24.891  INFO 13724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:41:24.915  INFO 13724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-2019-10-12 16:41:25.373  INFO 13724 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94526c60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:41:25.856  INFO 13724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:41:25.885  INFO 13724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:41:25.885  INFO 13724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:41:26.033  INFO 13724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:41:26.034  INFO 13724 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2713 ms
-2019-10-12 16:41:26.106  INFO 13724 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:41:26.111  INFO 13724 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:41:26.154  INFO 13724 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:41:26.429 ERROR 13724 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:41:26.434  INFO 13724 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:41:26.704  INFO 13724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:41:26.851  INFO 13724 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 16:41:26.968  INFO 13724 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:41:26.969  INFO 13724 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:41:27.155  INFO 13724 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:41:27.328  INFO 13724 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:41:27.588  INFO 13724 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 16:41:28.192  INFO 13724 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 16:41:28.332  WARN 13724 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 16:41:28.529  WARN 13724 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 16:41:28.621  INFO 13724 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 16:41:28.641  INFO 13724 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 16:41:28.681  INFO 13724 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 16:41:28.837  INFO 13724 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 16:41:28.881  INFO 13724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 16:41:28.884  INFO 13724 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 7.12 seconds (JVM running for 9.937)
-2019-10-12 16:41:42.309  INFO 13724 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 16:41:42.313  INFO 13724 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 16:41:42.321  INFO 13724 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-10-12 16:42:18.460 DEBUG 13724 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,avatarUrl) values (?,?,?,?,?) 
-2019-10-12 16:42:18.550 ERROR 13724 --- [http-nio-8088-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]
-### SQL: insert into user (username, password, nickname,head_portrait,avatarUrl)         values (?,?,?,?,?)
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]
-; bad SQL grammar []; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]] with root cause
-
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.table.Table.getColumn(Table.java:708) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseColumn(Parser.java:1377) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseColumnList(Parser.java:1362) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1731) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseInsert(Parser.java:1684) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parsePrepared(Parser.java:891) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:476) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:929) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:473) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349) ~[druid-1.1.9.jar:1.1.9]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy131.prepareStatement(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy130.update(Unknown Source) ~[na:na]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185) ~[mybatis-3.4.6.jar:3.4.6]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
-	at com.sun.proxy.$Proxy94.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278) ~[mybatis-spring-1.3.2.jar:1.3.2]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy99.registerUser(Unknown Source) ~[na:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at com.sun.proxy.$Proxy100.registerUser(Unknown Source) ~[na:na]
-	at com.hubu.work.service.UserService.registerUser(UserService.java:26) ~[classes/:na]
-	at com.hubu.work.controller.UserController.registerUser(UserController.java:37) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.9.jar:1.1.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
-
-2019-10-12 16:43:12.689  INFO 14376 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 14376 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:43:12.694 DEBUG 14376 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:43:12.696  INFO 14376 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:43:12.825  INFO 14376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:43:12.825  INFO 14376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:43:14.658  INFO 14376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:43:14.674  INFO 14376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
-2019-10-12 16:43:15.049  INFO 14376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$705a7ad4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:43:15.427  INFO 14376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:43:15.451  INFO 14376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:43:15.451  INFO 14376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:43:15.568  INFO 14376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:43:15.568  INFO 14376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2743 ms
-2019-10-12 16:43:15.620  INFO 14376 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:43:15.622  INFO 14376 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:43:15.656  INFO 14376 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:43:15.892 ERROR 14376 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:43:15.897  INFO 14376 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:43:16.153  INFO 14376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:43:16.248  INFO 14376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 16:43:16.308  INFO 14376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:43:16.308  INFO 14376 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:43:16.433  INFO 14376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:43:16.557  INFO 14376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:43:16.782  INFO 14376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 16:43:17.276  INFO 14376 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 16:43:17.424  WARN 14376 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 16:43:17.580  WARN 14376 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 16:43:17.673  INFO 14376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 16:43:17.686  INFO 14376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 16:43:17.713  INFO 14376 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 16:43:17.865  INFO 14376 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 16:43:17.911  INFO 14376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 16:43:17.915  INFO 14376 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.412 seconds (JVM running for 8.989)
-2019-10-12 16:43:59.698  INFO 14376 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 16:43:59.698  INFO 14376 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 16:43:59.715  INFO 14376 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2019-10-12 16:43:59.800 DEBUG 14376 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,avatarUrl) values (?,?,?,?,?) 
-2019-10-12 16:43:59.891 ERROR 14376 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error updating database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]
-### SQL: insert into user (username, password, nickname,head_portrait,avatarUrl)         values (?,?,?,?,?)
-### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]
-; bad SQL grammar []; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]] with root cause
-
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "AVATARURL" not found; SQL statement:
-insert into user (username, password, nickname,head_portrait,avatarUrl)
-        values (?,?,?,?,?) [42122-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.table.Table.getColumn(Table.java:708) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseColumn(Parser.java:1377) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseColumnList(Parser.java:1362) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1731) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parseInsert(Parser.java:1684) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parsePrepared(Parser.java:891) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parse(Parser.java:788) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.parse(Parser.java:760) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.command.Parser.prepareCommand(Parser.java:683) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Session.prepareLocal(Session.java:627) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.engine.Session.prepareCommand(Session.java:565) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77) ~[h2-1.4.199.jar:1.4.199]
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:349) ~[h2-1.4.199.jar:1.4.199]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:476) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:929) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:473) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:342) ~[druid-1.1.9.jar:1.1.9]
-	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349) ~[druid-1.1.9.jar:1.1.9]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy116.prepareStatement(Unknown Source) ~[na:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:87) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.4.6.jar:3.4.6]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy115.update(Unknown Source) ~[na:na]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185) ~[mybatis-3.4.6.jar:3.4.6]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.2.jar:1.3.2]
-	at com.sun.proxy.$Proxy94.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278) ~[mybatis-spring-1.3.2.jar:1.3.2]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58) ~[mybatis-3.4.6.jar:3.4.6]
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59) ~[mybatis-3.4.6.jar:3.4.6]
-	at com.sun.proxy.$Proxy99.registerUser(Unknown Source) ~[na:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at com.sun.proxy.$Proxy100.registerUser(Unknown Source) ~[na:na]
-	at com.hubu.work.service.UserService.registerUser(UserService.java:26) ~[classes/:na]
-	at com.hubu.work.controller.UserController.registerUser(UserController.java:37) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.9.jar:1.1.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
-
-2019-10-12 16:44:44.023  INFO 14444 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 14444 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:44:44.029 DEBUG 14444 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:44:44.029  INFO 14444 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:44:44.126  INFO 14444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:44:44.126  INFO 14444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:44:45.613  INFO 14444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:44:45.633  INFO 14444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
-2019-10-12 16:44:46.063  INFO 14444 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd03c6f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:44:46.489  INFO 14444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:44:46.518  INFO 14444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:44:46.519  INFO 14444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:44:46.659  INFO 14444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:44:46.660  INFO 14444 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2534 ms
-2019-10-12 16:44:46.716  INFO 14444 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:44:46.719  INFO 14444 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:44:46.763  INFO 14444 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:44:47.036 ERROR 14444 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:44:47.039  INFO 14444 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:44:47.307  INFO 14444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:44:47.424  INFO 14444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 16:44:47.515  INFO 14444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:44:47.517  INFO 14444 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:44:47.709  INFO 14444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:44:47.904  INFO 14444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:44:48.192  INFO 14444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 16:44:49.139  INFO 14444 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 16:44:49.282  WARN 14444 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 16:44:49.471  WARN 14444 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 16:44:49.565  INFO 14444 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 16:44:49.588  INFO 14444 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 16:44:49.619  INFO 14444 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 16:44:49.805  INFO 14444 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 16:44:49.866  INFO 14444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 16:44:49.870  INFO 14444 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.895 seconds (JVM running for 9.79)
-2019-10-12 16:44:54.413  INFO 14444 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 16:44:54.413  INFO 14444 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 16:44:54.421  INFO 14444 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2019-10-12 16:44:54.482 DEBUG 14444 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:44:54.501 DEBUG 14444 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), pictures/null.jpg(String), 咱家李沁真好看(String)
-2019-10-12 16:44:54.504 DEBUG 14444 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:45:06.521 DEBUG 14444 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 16:45:06.522 DEBUG 14444 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 16:45:06.542 DEBUG 14444 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 3
-2019-10-12 16:46:34.499  INFO 9260 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 9260 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:46:34.499 DEBUG 9260 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:46:34.499  INFO 9260 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:46:34.643  INFO 9260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:46:34.643  INFO 9260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:46:36.022  INFO 9260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:46:36.042  INFO 9260 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-12 16:46:36.394  INFO 9260 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e6319c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:46:36.840  INFO 9260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:46:36.867  INFO 9260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:46:36.867  INFO 9260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:46:36.995  INFO 9260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:46:36.995  INFO 9260 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2342 ms
-2019-10-12 16:46:37.050  INFO 9260 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:46:37.053  INFO 9260 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:46:37.242  INFO 9260 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:46:37.471 ERROR 9260 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:46:37.474  INFO 9260 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:46:37.728  INFO 9260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:46:37.842  INFO 9260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 16:46:37.931  INFO 9260 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:46:37.933  INFO 9260 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:46:38.142  INFO 9260 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:46:38.313  INFO 9260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:46:38.619  INFO 9260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 16:46:39.284  INFO 9260 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 16:46:39.464  WARN 9260 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 16:46:39.668  WARN 9260 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 16:46:39.788  INFO 9260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 16:46:39.806  INFO 9260 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 16:46:39.836  INFO 9260 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 16:46:40.047  INFO 9260 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 16:46:40.094  INFO 9260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 16:46:40.098  INFO 9260 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 7.039 seconds (JVM running for 10.766)
-2019-10-12 16:46:52.021  INFO 9260 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 16:46:52.021  INFO 9260 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 16:46:52.030  INFO 9260 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-10-12 16:46:52.114 DEBUG 9260 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:46:52.136 DEBUG 9260 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), pictures/null.jpg(String), 咱家李沁真好看(String)
-2019-10-12 16:46:52.141 DEBUG 9260 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:46:59.815 DEBUG 9260 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 16:46:59.815 DEBUG 9260 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 16:46:59.832 DEBUG 9260 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 3
-2019-10-12 16:50:03.341  INFO 10852 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 10852 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 16:50:03.351 DEBUG 10852 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 16:50:03.351  INFO 10852 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 16:50:03.423  INFO 10852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 16:50:03.423  INFO 10852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 16:50:05.027  INFO 10852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 16:50:05.042  INFO 10852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-10-12 16:50:05.379  INFO 10852 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86b82d86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 16:50:05.710  INFO 10852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 16:50:05.730  INFO 10852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 16:50:05.731  INFO 10852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 16:50:05.846  INFO 10852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 16:50:05.852  INFO 10852 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2429 ms
-2019-10-12 16:50:05.927  INFO 10852 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 16:50:05.929  INFO 10852 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 16:50:05.976  INFO 10852 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 16:50:06.201 ERROR 10852 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 16:50:06.213  INFO 10852 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 16:50:06.406  INFO 10852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 16:50:06.499  INFO 10852 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 16:50:06.551  INFO 10852 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 16:50:06.551  INFO 10852 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 16:50:06.661  INFO 10852 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 16:50:06.784  INFO 10852 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 16:50:07.012  INFO 10852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 16:50:07.469  INFO 10852 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 16:50:07.632  WARN 10852 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 16:50:07.790  WARN 10852 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 16:50:07.885  INFO 10852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 16:50:07.902  INFO 10852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 16:50:07.935  INFO 10852 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 16:50:08.079  INFO 10852 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 16:50:08.121  INFO 10852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 16:50:08.123  INFO 10852 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 5.719 seconds (JVM running for 8.215)
-2019-10-12 16:50:35.303  INFO 10852 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 16:50:35.303  INFO 10852 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 16:50:35.320  INFO 10852 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
-2019-10-12 16:50:35.386 DEBUG 10852 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:50:35.402 DEBUG 10852 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), null, 咱家李沁真好看(String)
-2019-10-12 16:50:35.407 DEBUG 10852 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:50:35.408 DEBUG 10852 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:50:35.408 DEBUG 10852 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), pictures/null.jpg(String), 咱家李沁真好看(String)
-2019-10-12 16:50:35.408 DEBUG 10852 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:50:44.554 DEBUG 10852 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 16:50:44.554 DEBUG 10852 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 16:50:44.568 DEBUG 10852 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 4
-2019-10-12 16:51:11.581 DEBUG 10852 --- [http-nio-8088-exec-5] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:51:11.581 DEBUG 10852 --- [http-nio-8088-exec-5] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), null, lxy(String)
-2019-10-12 16:51:11.585 DEBUG 10852 --- [http-nio-8088-exec-5] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:51:11.586 DEBUG 10852 --- [http-nio-8088-exec-5] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:51:11.586 DEBUG 10852 --- [http-nio-8088-exec-5] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), pictures/null.jpg(String), lxy(String)
-2019-10-12 16:51:11.586 DEBUG 10852 --- [http-nio-8088-exec-5] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:51:13.022 DEBUG 10852 --- [http-nio-8088-exec-6] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:51:13.023 DEBUG 10852 --- [http-nio-8088-exec-6] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), null, lxy(String)
-2019-10-12 16:51:13.024 DEBUG 10852 --- [http-nio-8088-exec-6] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:51:13.026 DEBUG 10852 --- [http-nio-8088-exec-6] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 16:51:13.026 DEBUG 10852 --- [http-nio-8088-exec-6] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), pictures/null.jpg(String), lxy(String)
-2019-10-12 16:51:13.027 DEBUG 10852 --- [http-nio-8088-exec-6] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 16:51:19.216 DEBUG 10852 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 16:51:19.219 DEBUG 10852 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 16:51:19.222 DEBUG 10852 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 8
-2019-10-12 17:04:28.858  INFO 5000 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 5000 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 17:04:28.869 DEBUG 5000 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 17:04:28.869  INFO 5000 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 17:04:28.961  INFO 5000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 17:04:28.962  INFO 5000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 17:04:30.484  INFO 5000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 17:04:30.504  INFO 5000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-12 17:04:30.838  INFO 5000 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8f4f62e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 17:04:31.257  INFO 5000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 17:04:31.282  INFO 5000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 17:04:31.283  INFO 5000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 17:04:31.395  INFO 5000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 17:04:31.400  INFO 5000 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2438 ms
-2019-10-12 17:04:31.456  INFO 5000 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 17:04:31.458  INFO 5000 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 17:04:31.494  INFO 5000 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 17:04:31.703 ERROR 5000 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 17:04:31.707  INFO 5000 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 17:04:31.939  INFO 5000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 17:04:32.038  INFO 5000 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 17:04:32.124  INFO 5000 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 17:04:32.124  INFO 5000 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 17:04:32.298  INFO 5000 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 17:04:32.457  INFO 5000 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 17:04:32.702  INFO 5000 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 17:04:33.276  INFO 5000 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 17:04:33.444  WARN 5000 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 17:04:33.613  WARN 5000 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 17:04:33.711  INFO 5000 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 17:04:33.734  INFO 5000 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 17:04:33.765  INFO 5000 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 17:04:33.914  INFO 5000 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 17:04:33.958  INFO 5000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 17:04:33.961  INFO 5000 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.13 seconds (JVM running for 8.543)
-2019-10-12 17:04:48.515  INFO 5000 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 17:04:48.515  INFO 5000 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 17:04:48.527  INFO 5000 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-10-12 17:05:11.633 DEBUG 5000 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 17:05:11.660 DEBUG 5000 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), 1(String), 123(String)
-2019-10-12 17:05:11.661 DEBUG 5000 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 17:05:42.142 DEBUG 5000 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 17:05:42.142 DEBUG 5000 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), 1(String), 啦啦啦(String)
-2019-10-12 17:05:42.143 DEBUG 5000 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 17:05:50.690 DEBUG 5000 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 17:05:50.690 DEBUG 5000 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 17:05:50.958 DEBUG 5000 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 4
-2019-10-12 17:09:51.872 DEBUG 5000 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 17:09:51.873 DEBUG 5000 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 17:09:51.876 DEBUG 5000 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 4
-2019-10-12 17:10:31.552  INFO 9860 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 9860 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 17:10:31.557 DEBUG 9860 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 17:10:31.557  INFO 9860 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 17:10:31.668  INFO 9860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 17:10:31.668  INFO 9860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 17:10:33.619  INFO 9860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 17:10:33.640  INFO 9860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-12 17:10:34.014  INFO 9860 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60591470] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 17:10:34.537  INFO 9860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 17:10:34.568  INFO 9860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 17:10:34.569  INFO 9860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 17:10:34.723  INFO 9860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 17:10:34.724  INFO 9860 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3056 ms
-2019-10-12 17:10:34.778  INFO 9860 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 17:10:34.780  INFO 9860 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 17:10:34.824  INFO 9860 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 17:10:35.066 ERROR 9860 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 17:10:35.070  INFO 9860 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 17:10:35.388  INFO 9860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 17:10:35.505  INFO 9860 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 17:10:35.655  INFO 9860 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 17:10:35.659  INFO 9860 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 17:10:35.860  INFO 9860 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 17:10:36.038  INFO 9860 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 17:10:36.351  INFO 9860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 17:10:37.170  INFO 9860 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 17:10:37.404  WARN 9860 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 17:10:37.634  WARN 9860 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 17:10:37.775  INFO 9860 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 17:10:37.814  INFO 9860 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 17:10:38.052  INFO 9860 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 17:10:38.290  INFO 9860 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 17:10:38.357  INFO 9860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 17:10:38.363  INFO 9860 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 8.325 seconds (JVM running for 11.157)
-2019-10-12 17:10:38.444  INFO 9860 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 17:10:38.444  INFO 9860 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 17:10:38.457  INFO 9860 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2019-10-12 17:10:43.751 DEBUG 9860 --- [http-nio-8088-exec-7] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 17:10:43.783 DEBUG 9860 --- [http-nio-8088-exec-7] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 17:10:43.799 DEBUG 9860 --- [http-nio-8088-exec-7] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 0
-2019-10-12 17:11:15.585 DEBUG 9860 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 17:11:15.595 DEBUG 9860 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: gxm(String), 599111(String), They(String), 啦啦啦(String), 战战(String)
-2019-10-12 17:11:15.596 DEBUG 9860 --- [http-nio-8088-exec-1] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 17:11:22.477 DEBUG 9860 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 17:11:22.478 DEBUG 9860 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 17:11:22.480 DEBUG 9860 --- [http-nio-8088-exec-3] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 1
-2019-10-12 17:13:11.648  INFO 11076 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 11076 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 17:13:11.653 DEBUG 11076 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 17:13:11.653  INFO 11076 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 17:13:11.732  INFO 11076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 17:13:11.732  INFO 11076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 17:13:13.445  INFO 11076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 17:13:13.465  INFO 11076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
-2019-10-12 17:13:13.860  INFO 11076 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$610169b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 17:13:14.402  INFO 11076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 17:13:14.440  INFO 11076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 17:13:14.441  INFO 11076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 17:13:14.589  INFO 11076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 17:13:14.589  INFO 11076 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2857 ms
-2019-10-12 17:13:14.652  INFO 11076 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 17:13:14.660  INFO 11076 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 17:13:14.700  INFO 11076 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 17:13:14.936 ERROR 11076 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 17:13:14.941  INFO 11076 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 17:13:15.190  INFO 11076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 17:13:15.281  INFO 11076 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 17:13:15.336  INFO 11076 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 17:13:15.337  INFO 11076 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 17:13:15.461  INFO 11076 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 17:13:15.589  INFO 11076 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 17:13:15.822  INFO 11076 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 17:13:16.313  INFO 11076 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 17:13:16.462  WARN 11076 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 17:13:16.649  WARN 11076 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 17:13:16.740  INFO 11076 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 17:13:16.755  INFO 11076 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 17:13:16.783  INFO 11076 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 17:13:16.962  INFO 11076 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 17:13:17.014  INFO 11076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 17:13:17.018  INFO 11076 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.465 seconds (JVM running for 8.945)
-2019-10-12 17:13:21.321  INFO 11076 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 17:13:21.321  INFO 11076 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 17:13:21.330  INFO 11076 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-10-12 17:13:38.561 DEBUG 11076 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 17:13:38.582 DEBUG 11076 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: 111(String), 111(String), 111(String), 111(String), 我的世界(String)
-2019-10-12 17:13:38.584 DEBUG 11076 --- [http-nio-8088-exec-9] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 17:14:09.243 DEBUG 11076 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 17:14:09.243 DEBUG 11076 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 17:14:09.261 DEBUG 11076 --- [http-nio-8088-exec-2] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 1
-2019-10-12 17:16:33.121  INFO 5920 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 5920 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 17:16:33.125 DEBUG 5920 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 17:16:33.125  INFO 5920 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 17:16:33.235  INFO 5920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 17:16:33.235  INFO 5920 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 17:16:34.958  INFO 5920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 17:16:34.972  INFO 5920 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
-2019-10-12 17:16:35.329  INFO 5920 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$144be92e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 17:16:35.769  INFO 5920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 17:16:35.792  INFO 5920 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 17:16:35.792  INFO 5920 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 17:16:35.913  INFO 5920 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 17:16:35.914  INFO 5920 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2679 ms
-2019-10-12 17:16:35.964  INFO 5920 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 17:16:35.967  INFO 5920 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 17:16:36.008  INFO 5920 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 17:16:36.262 ERROR 5920 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 17:16:36.266  INFO 5920 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 17:16:36.511  INFO 5920 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 17:16:36.632  INFO 5920 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 17:16:36.764  INFO 5920 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 17:16:36.765  INFO 5920 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 17:16:37.019  INFO 5920 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 17:16:37.251  INFO 5920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 17:16:37.542  INFO 5920 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 17:16:38.210  INFO 5920 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 17:16:38.387  WARN 5920 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 17:16:38.583  WARN 5920 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 17:16:38.691  INFO 5920 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 17:16:38.712  INFO 5920 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 17:16:38.748  INFO 5920 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 17:16:38.934  INFO 5920 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 17:16:38.982  INFO 5920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 17:16:38.986  INFO 5920 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 7.157 seconds (JVM running for 9.725)
-2019-10-12 17:16:48.025  INFO 5920 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-12 17:16:48.025  INFO 5920 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-12 17:16:48.037  INFO 5920 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-10-12 17:17:05.717 DEBUG 5920 --- [http-nio-8088-exec-7] c.h.w.H.mapper.UserMapper.registerUser   : ==>  Preparing: insert into user (username, password, nickname,head_portrait,personal_signature) values (?,?,?,?,?) 
-2019-10-12 17:17:05.737 DEBUG 5920 --- [http-nio-8088-exec-7] c.h.w.H.mapper.UserMapper.registerUser   : ==> Parameters: 11(String), 11(String), 11(String), 11(String), 我的计算(String)
-2019-10-12 17:17:05.738 DEBUG 5920 --- [http-nio-8088-exec-7] c.h.w.H.mapper.UserMapper.registerUser   : <==    Updates: 1
-2019-10-12 17:17:11.911 DEBUG 5920 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.selectAll      : ==>  Preparing: select * from user 
-2019-10-12 17:17:11.912 DEBUG 5920 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.selectAll      : ==> Parameters: 
-2019-10-12 17:17:12.176 DEBUG 5920 --- [http-nio-8088-exec-8] c.h.w.H.mapper.UserMapper.selectAll      : <==      Total: 1
-2019-10-12 17:30:38.220  INFO 7240 --- [restartedMain] com.hubu.work.WorkApplication            : Starting WorkApplication on DESKTOP-7R60MEB with PID 7240 (started by 22404 in D:\学习资料\JavaProgram-master)
-2019-10-12 17:30:38.229 DEBUG 7240 --- [restartedMain] com.hubu.work.WorkApplication            : Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
-2019-10-12 17:30:38.231  INFO 7240 --- [restartedMain] com.hubu.work.WorkApplication            : The following profiles are active: dev
-2019-10-12 17:30:38.351  INFO 7240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-12 17:30:38.351  INFO 7240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-12 17:30:39.663  INFO 7240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-10-12 17:30:39.685  INFO 7240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
-2019-10-12 17:30:40.126  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a30ca81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-12 17:30:40.605  INFO 7240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2019-10-12 17:30:40.631  INFO 7240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-12 17:30:40.631  INFO 7240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2019-10-12 17:30:40.738  INFO 7240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-12 17:30:40.738  INFO 7240 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2387 ms
-2019-10-12 17:30:40.788  INFO 7240 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Servlet statViewServlet was not registered (possibly already registered?)
-2019-10-12 17:30:40.794  INFO 7240 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
-2019-10-12 17:30:40.836  INFO 7240 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-10-12 17:30:40.978 ERROR 7240 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
-2019-10-12 17:30:40.982  INFO 7240 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2019-10-12 17:30:41.480  INFO 7240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-12 17:30:41.612  INFO 7240 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2019-10-12 17:30:41.719  INFO 7240 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2019-10-12 17:30:41.720  INFO 7240 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-10-12 17:30:41.969  INFO 7240 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-10-12 17:30:42.157  INFO 7240 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-10-12 17:30:42.420  INFO 7240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-10-12 17:30:43.000  INFO 7240 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-10-12 17:30:43.180  WARN 7240 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-10-12 17:30:43.379  WARN 7240 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2019-10-12 17:30:43.481  INFO 7240 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-10-12 17:30:43.502  INFO 7240 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-10-12 17:30:43.533  INFO 7240 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-10-12 17:30:43.689  INFO 7240 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
-2019-10-12 17:30:43.732  INFO 7240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2019-10-12 17:30:43.736  INFO 7240 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 6.694 seconds (JVM running for 9.393)
+2019-11-21 18:25:57.531  INFO 31920 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-11-21 18:25:57.533  INFO 31920 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-21 18:25:57.831  INFO 31920 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-21 18:25:58.015  INFO 31920 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-11-21 18:25:58.373  INFO 31920 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-21 18:25:59.104  INFO 31920 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-21 18:25:59.298  WARN 31920 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-21 18:25:59.511  WARN 31920 --- [restartedMain] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-21 18:25:59.727  INFO 31920 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-21 18:25:59.748  INFO 31920 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-21 18:25:59.784  INFO 31920 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-21 18:25:59.948  INFO 31920 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectAllUsingGET_1
+2019-11-21 18:26:00.013  INFO 31920 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-11-21 18:26:00.019  INFO 31920 --- [restartedMain] com.hubu.work.WorkApplication            : Started WorkApplication in 9.748 seconds (JVM running for 12.152)

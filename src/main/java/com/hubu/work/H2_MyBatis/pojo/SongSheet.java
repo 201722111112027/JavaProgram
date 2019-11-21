@@ -5,7 +5,16 @@ public class SongSheet {
     private String name;
     private String author;
     private String time;
-    private String click_throughput;
+
+    public Integer getClick_throughput() {
+        return click_throughput;
+    }
+
+    public void setClick_throughput(Integer click_throughput) {
+        this.click_throughput = click_throughput;
+    }
+
+    private Integer click_throughput;
     private String state;
 
     public Integer getId() {
@@ -40,13 +49,6 @@ public class SongSheet {
         this.time = time;
     }
 
-    public String getClick_throughput() {
-        return click_throughput;
-    }
-
-    public void setClick_throughput(String click_throughput) {
-        this.click_throughput = click_throughput;
-    }
 
     public String getState() {
         return state;

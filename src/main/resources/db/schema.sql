@@ -21,7 +21,7 @@ CREATE TABLE `song_sheet`
   `name` varchar(50) DEFAULT NULL comment '歌单名',
   `author` varchar(50) DEFAULT NULL comment '创建者',
   `time` varchar(50) DEFAULT NULL comment '发布时间',
-  `click_throughput` varchar(50) DEFAULT NULL comment '点击量',
+  `click_throughput` bigint(50) DEFAULT NULL comment '点击量',
   `state` varchar(50) DEFAULT NULL comment '是否公布',
   PRIMARY KEY (`id`)
 );

@@ -16,4 +16,9 @@ public class SongSheetService {
         List<SongSheet> songSheets = songSheetMapper.selectAll();
         return songSheets;
     }
+
+    //新建歌单
+    public void addSongSheet(SongSheet songSheet){
+        songSheetMapper.addSongSheet(songSheet);
+    }
 }

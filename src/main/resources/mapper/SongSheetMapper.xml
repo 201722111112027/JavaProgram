@@ -6,4 +6,9 @@
     select * from song_sheet;
     </select>
 
+    <insert id="addSongSheet">
+        insert into song_sheet(id, name, author, time,click_throughput,state)
+        values(#{name},#{author},#{time},#{click_throughput},#{state})
+    </insert>
+
 </mapper>

@@ -11,4 +11,6 @@ import java.util.List;
 public interface SongSheetMapper {
 
     List<SongSheet> selectAll();//查询所有的歌单名
+
+    void addSongSheet(SongSheet songSheet);
 }

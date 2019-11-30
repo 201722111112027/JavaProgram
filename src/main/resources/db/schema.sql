@@ -1,4 +1,4 @@
-SET NAMES utf8;
+-- SET NAMES utf8;
 
 -- 用户表
 DROP TABLE IF EXISTS `user`;
@@ -33,7 +33,8 @@ CREATE TABLE `songs`
   `name` varchar(50) DEFAULT NULL comment '歌名',
   `author` varchar(50) DEFAULT NULL comment '歌手名',
   `url` varchar(50) DEFAULT NULL comment '歌曲的相对地址',
-  `click_throughput` varchar(50) DEFAULT NULL comment '播放量',
+  `url_words` varchar(50) DEFAULT NULL comment '歌词的相对地址',
+  `click_throughput` bigint(50) DEFAULT NULL comment '播放量',
   `ascription` varchar(50) DEFAULT NULL comment '所属歌单',
   `state` varchar(50) DEFAULT NULL comment '上传是否',
   PRIMARY KEY (`id`)
@@ -46,8 +47,9 @@ CREATE TABLE `comment`
   `id`              bigint(20) NOT NULL AUTO_INCREMENT,
   `author`          varchar(50)  DEFAULT NULL comment '作者',
   `content`         varchar(250) DEFAULT NULL comment '评论内容',
-  `praisePoints`    varchar(250) DEFAULT NULL comment '点赞数',
+  `praisePoints`    bigint(250) DEFAULT NULL comment '点赞数',
   `publicationTime` varchar(250) DEFAULT NULL comment '发表时间',
+  `commentAim` varchar(250) DEFAULT NULL comment '评论对象（歌曲id）',
   `replay_id` varchar(250) DEFAULT NULL comment '回复id',
   PRIMARY KEY (`id`)
 );

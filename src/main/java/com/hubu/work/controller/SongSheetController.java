@@ -1,14 +1,12 @@
 package com.hubu.work.controller;
 
 import com.hubu.work.H2_MyBatis.pojo.SongSheet;
+import com.hubu.work.H2_MyBatis.pojo.Songs;
 import com.hubu.work.service.SongSheetService;
 import com.hubu.work.utils.Utils;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -35,5 +33,12 @@ public class SongSheetController {
        songSheet.setState("N");
        songSheet.setTime(utils.getTime());
        songSheetService.addSongSheet(songSheet);
+    }
+
+    @ApiOperation("查询歌单所属歌曲")
+    @PostMapping("/selectAllBySongSheetName")
+    public List<Songs> selectAllBySongSheetName(@RequestParam String name){
+        List<Songs> songsList = songSheetService.selectAllBySongSheetName(name);
+        return songsList;
     }
 }

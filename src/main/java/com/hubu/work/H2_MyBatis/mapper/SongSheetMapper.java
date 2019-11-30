@@ -1,6 +1,7 @@
 package com.hubu.work.H2_MyBatis.mapper;
 
 import com.hubu.work.H2_MyBatis.pojo.SongSheet;
+import com.hubu.work.H2_MyBatis.pojo.Songs;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -12,5 +13,7 @@ public interface SongSheetMapper {
 
     List<SongSheet> selectAll();//查询所有的歌单名
 
-    void addSongSheet(SongSheet songSheet);
+    void addSongSheet(SongSheet songSheet);//新建歌单
+
+    List<Songs> selectAllBySongSheetName(String name);//查询歌单下的所有歌曲
 }

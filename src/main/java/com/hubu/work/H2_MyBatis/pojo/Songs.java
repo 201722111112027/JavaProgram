@@ -1,0 +1,69 @@
+package com.hubu.work.H2_MyBatis.pojo;
+
+public class Songs {
+    private String name;
+    private String author;
+    private String url;
+    private String url_words;
+    private Integer click_throughput;
+    private String ascription;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getUrl_words() {
+        return url_words;
+    }
+
+    public void setUrl_words(String url_words) {
+        this.url_words = url_words;
+    }
+
+    public Integer getClick_throughput() {
+        return click_throughput;
+    }
+
+    public void setClick_throughput(Integer click_throughput) {
+        this.click_throughput = click_throughput;
+    }
+
+    public String getAscription() {
+        return ascription;
+    }
+
+    public void setAscription(String ascription) {
+        this.ascription = ascription;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    private String state;
+
+}

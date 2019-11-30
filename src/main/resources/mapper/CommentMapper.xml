@@ -3,12 +3,16 @@
 <mapper namespace="com.hubu.work.H2_MyBatis.mapper.CommentMapper">
 
     <select id="selectAllComments" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
-        select * from comment;
+        select * from comment where commentAim=#{aim};
     </select>
 
     <insert id="addComment">
-        insert into comment (id,author,content,praisePoints)
-        values (#{id},#{author},#{content} ,#{praisePoints},#{publicationTime}  )
+        insert into comment (id,commentAim,author,content,praisePoints,replayId)
+        values (#{id},#{commentAim},#{author},#{content} ,#{praisePoints},#{publicationTime},#{replayId})
     </insert>
+
+    <update id="addPraise">
+        update comment set praisePoints=#{praisePoints} where id=#{id}
+    </update>
 
 </mapper>

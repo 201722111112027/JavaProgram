@@ -15,7 +15,7 @@ public class SongsService {
     SongsMapper songsMapper;
 
     //按歌名查找歌曲
-    public List<Songs> querySongById(String name){
+    public List<Songs> querySongByName(String name){
         List<Songs> songs = songsMapper.querySongByName(name);
         return songs;
     }
@@ -30,5 +30,16 @@ public class SongsService {
     public List<Songs> querySongByAscription(String ascription){
         List<Songs> songsList = songsMapper.querySongByAscription(ascription);
         return songsList;
+    }
+
+    //播放量增加
+    public void addClickThroughput(Songs songs){
+        songsMapper.addClickThroughput(songs);
+    }
+
+    //按照ID查询歌曲信息
+    public Songs querySongById(Integer id){
+        Songs songs = songsMapper.querySongById(id);
+        return songs;
     }
 }

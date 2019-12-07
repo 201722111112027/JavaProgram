@@ -17,4 +17,12 @@
         where ascription like "%#{ascription}%"
     </select>
 
+    <update id="addClickThroughput">
+        update songs set click_throughput=#{click_throughput} where id=#{id}
+    </update>
+
+    <select id="querySongById" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs where ID=#{id}
+    </select>
+
 </mapper>

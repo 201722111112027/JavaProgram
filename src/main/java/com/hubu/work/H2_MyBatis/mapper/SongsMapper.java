@@ -14,4 +14,8 @@ public interface SongsMapper {
     List<Songs> querySongByAuthor(String author);//按歌手名查找歌曲
 
     List<Songs> querySongByAscription(String ascription);//按歌单名查找歌曲
+
+    void addClickThroughput(Songs songs);//歌曲播放量增加
+
+    Songs querySongById(Integer id);//按照Id查询歌曲信息
 }

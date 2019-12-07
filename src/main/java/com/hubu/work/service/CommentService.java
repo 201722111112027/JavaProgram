@@ -13,12 +13,19 @@ public class CommentService {
     @Autowired
     CommentMapper commentMapper;
 
-    public List<Comment> selectAllComments(){
-        List<Comment> comments = commentMapper.selectAllComments();
+    //查询对应歌曲的全部评论
+    public List<Comment> selectAllComments(String aim){
+        List<Comment> comments = commentMapper.selectAllComments(aim);
         return comments;
     }
 
+    //评论歌曲
     public void addComment(Comment comment){
         commentMapper.addComment(comment);
+    }
+
+    //对一级评论尽心点赞
+    public void addPraise(Comment comment){
+        commentMapper.addPraise(comment);
     }
 }

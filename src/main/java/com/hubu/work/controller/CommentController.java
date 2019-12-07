@@ -20,8 +20,8 @@ public class CommentController {
 
     @ApiOperation("查询全部评论")
     @PostMapping("/selectAllComments")
-    public List<Comment> selectAllComments(){
-        List<Comment> comments=commentService.selectAllComments();
+    public List<Comment> selectAllComments(@RequestParam String aim){
+        List<Comment> comments=commentService.selectAllComments(aim);
         return comments;
     }
 
@@ -30,7 +30,17 @@ public class CommentController {
     public void addComments(@RequestBody Comment comment){
         comment.setPraisePoints(0);
         comment.setPublicationTime(utils.getTime());
+        comment.setReplayId("");
         commentService.addComment(comment);
+    }
 
+    @ApiOperation("对一级评论进行点赞")
+    @PostMapping("/addPraise")
+    public void addPraise(@RequestBody Comment comment){
+        Integer praisePoints = comment.getPraisePoints();
+        Integer praisePoint=praisePoints+1;
+        comment.setPraisePoints(praisePoint);
+
+        commentService.addPraise(comment);
     }
 }

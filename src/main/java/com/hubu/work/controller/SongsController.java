@@ -5,10 +5,7 @@ import com.hubu.work.service.SongsService;
 import com.hubu.work.utils.Utils;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,7 +21,7 @@ public class SongsController {
     @ApiOperation("根据歌名搜索歌曲")
     @PostMapping("/querySongById")
     public List<Songs> querySongById(@RequestParam String name){
-        List<Songs> songsList = songsService.querySongById(name);
+        List<Songs> songsList = songsService.querySongByName(name);
         return songsList;
     }
 
@@ -40,5 +37,15 @@ public class SongsController {
     public List<Songs> querySongByAscription(@RequestParam String ascription){
         List<Songs> songsList = songsService.querySongByAscription(ascription);
         return songsList;
+    }
+
+    @ApiOperation("增加歌曲播放量")
+    @PostMapping("/addClickThroughput")
+    public void addClickThroughput(@RequestBody Songs songs){
+        Songs songs1 = songsService.querySongById(songs.getId());
+        Integer click_throughput = songs1.getClick_throughput();
+        click_throughput=click_throughput+1;
+        songs.setClick_throughput(click_throughput);
+        songsService.addClickThroughput(songs);
     }
 }

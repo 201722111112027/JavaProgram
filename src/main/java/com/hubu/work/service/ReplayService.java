@@ -27,5 +27,9 @@ public class ReplayService {
         replayMapper.givePraise(comment);
     }
 
-
+    //根据ID查询评论对应信息
+    public Comment queryCommentById(Integer id){
+        Comment comment = replayMapper.queryCommentById(id);
+        return comment;
+    }
 }

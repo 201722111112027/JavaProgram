@@ -1,6 +1,15 @@
 package com.hubu.work.H2_MyBatis.pojo;
 
 public class Songs {
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    private Integer id;
     private String name;
     private String author;
     private String url;

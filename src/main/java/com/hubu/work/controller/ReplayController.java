@@ -38,7 +38,9 @@ public class ReplayController {
     @ApiOperation("点赞回复评论")
     @PostMapping("/givePraise")
     public void givePraise(@RequestBody Comment comment){
-        Integer praisePoints = comment.getPraisePoints();
+        Integer id = comment.getId();
+        Comment comment1 = replayService.queryCommentById(id);
+        Integer praisePoints = comment1.getPraisePoints();
         Integer praisePoint=praisePoints+1;
         comment.setPraisePoints(praisePoint);
         replayService.givePraise(comment);

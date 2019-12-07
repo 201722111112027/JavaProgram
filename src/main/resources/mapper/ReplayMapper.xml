@@ -3,7 +3,7 @@
 <mapper namespace="com.hubu.work.H2_MyBatis.mapper.ReplayMapper">
 
     <select id="selectAllReplayById" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
-        select * from comment where id=#{id}
+        select * from comment where replayId=#{id}
     </select>
 
     <insert id="addReplay">
@@ -14,5 +14,9 @@
     <update id="givePraise">
         update comment set praisePoints=#{praisePoints} where id=#{id}
     </update>
+
+    <select id="queryCommentById" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
+        select * from comment where id=#{id}
+    </select>
 
 </mapper>

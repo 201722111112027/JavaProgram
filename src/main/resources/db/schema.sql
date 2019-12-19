@@ -50,7 +50,7 @@ CREATE TABLE `comment`
   `praisePoints`    bigint(250) DEFAULT NULL comment '点赞数',
   `publicationTime` varchar(250) DEFAULT NULL comment '发表时间',
   `commentAim` varchar(250) DEFAULT NULL comment '评论对象（歌曲名）',
-  `replayId` varchar(250) DEFAULT NULL comment '回复id',
+  `replayId` bigint(250) DEFAULT NULL comment '回复id',
   PRIMARY KEY (`id`)
 );
 

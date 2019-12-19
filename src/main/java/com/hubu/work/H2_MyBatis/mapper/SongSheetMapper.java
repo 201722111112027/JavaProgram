@@ -16,4 +16,9 @@ public interface SongSheetMapper {
     void addSongSheet(SongSheet songSheet);//新建歌单
 
     List<Songs> selectAllBySongSheetName(String name);//查询歌单下的所有歌曲
+
+    SongSheet querySongSheetById(Integer id);//根据Id值查询歌单信息
+
+    void addClickThroughput(SongSheet songSheet);//增加歌单点击量
+
 }

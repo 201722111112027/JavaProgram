@@ -14,8 +14,14 @@ public class CommentService {
     CommentMapper commentMapper;
 
     //查询对应歌曲的全部评论
-    public List<Comment> selectAllComments(String aim){
-        List<Comment> comments = commentMapper.selectAllComments(aim);
+    public List<Comment> selectAllCommentsByName(String aim){
+        List<Comment> comments = commentMapper.selectAllCommentsByName(aim);
+        return comments;
+    }
+
+    //查询对应评论ID的全部回复评论
+    public List<Comment> selectAllCommentsById(Integer id){
+        List<Comment> comments=commentMapper.selectAllCommentsById(id);
         return comments;
     }
 

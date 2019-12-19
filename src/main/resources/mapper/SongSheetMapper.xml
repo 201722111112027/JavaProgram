@@ -16,4 +16,13 @@
         where ascription=#{name}
     </select>
 
+    <select id="querySongSheetById" resultType="com.hubu.work.H2_MyBatis.pojo.SongSheet">
+        select * from song_sheet
+        where id=#{id}
+    </select>
+
+    <update id="addClickThroughput">
+        update song_sheet set click_throughput=#{click_throughput} where id=#{id}
+    </update>
+
 </mapper>

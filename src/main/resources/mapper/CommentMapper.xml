@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hubu.work.H2_MyBatis.mapper.CommentMapper">
 
-    <select id="selectAllComments" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
+    <select id="selectAllCommentsByName" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
         select * from comment where commentAim=#{aim};
     </select>
 
@@ -10,6 +10,10 @@
         insert into comment (id,commentAim,author,content,praisePoints,replayId)
         values (#{id},#{commentAim},#{author},#{content} ,#{praisePoints},#{publicationTime},#{replayId})
     </insert>
+
+    <select id="selectAllCommentsById" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
+        select * from comment where replayId=#{id}
+    </select>
 
     <update id="addPraise">
         update comment set praisePoints=#{praisePoints} where id=#{id}

@@ -41,4 +41,14 @@ public class SongSheetController {
         List<Songs> songsList = songSheetService.selectAllBySongSheetName(name);
         return songsList;
     }
+
+    @ApiOperation("增加歌单点击量")
+    @PostMapping("/addClickThroughput")
+    public void addClickThroughput(@RequestBody SongSheet songSheet){
+        SongSheet songSheet1 = songSheetService.querySongSheetById(songSheet.getId());
+        Integer click_throughput = songSheet1.getClick_throughput();
+        click_throughput+=click_throughput;
+        songSheet.setClick_throughput(click_throughput);
+        songSheetService.addClickThroughput(songSheet);
+    }
 }

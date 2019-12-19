@@ -29,4 +29,15 @@ public class SongSheetService {
         List<Songs> songsList = songSheetMapper.selectAllBySongSheetName(name);
         return songsList;
     }
+
+    //按照歌单ID查询歌单信息
+    public SongSheet querySongSheetById(Integer id){
+        SongSheet songSheet = songSheetMapper.querySongSheetById(id);
+        return songSheet;
+    }
+
+    //增加歌单点击量
+    public void addClickThroughput(SongSheet songSheet){
+        songSheetMapper.addClickThroughput(songSheet);
+    }
 }

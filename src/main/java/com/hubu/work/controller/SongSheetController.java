@@ -35,7 +35,7 @@ public class SongSheetController {
        songSheetService.addSongSheet(songSheet);
     }
 
-    @ApiOperation("查询歌单所属歌曲")
+    @ApiOperation("查询歌曲所属歌单")
     @PostMapping("/selectAllBySongSheetName")
     public List<Songs> selectAllBySongSheetName(@RequestParam String name){
         List<Songs> songsList = songSheetService.selectAllBySongSheetName(name);

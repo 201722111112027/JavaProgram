@@ -30,7 +30,6 @@ public class ReplayController {
         comment.setPraisePoints(0);
         comment.setPublicationTime(utils.getTime());
         comment.setCommentAim("");
-
         replayService.addRplay(comment);
     }
 

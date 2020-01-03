@@ -9,4 +9,6 @@ import java.util.List;
 @Repository
 public interface SongSheetMapper {
     List<SongSheet> selectAll();//查询歌单名
+
+    void addSongSheet(SongSheet songSheet);
 }

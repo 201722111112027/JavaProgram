@@ -4,8 +4,27 @@ public class Comment {
     private Integer id;
     private String author;
     private String content;
+
+    public String getCommentAim() {
+        return commentAim;
+    }
+
+    public void setCommentAim(String commentAim) {
+        this.commentAim = commentAim;
+    }
+
+    private String commentAim;
     private Integer praisePoints;
     private String publicationTime;
+    public String getReplayId() {
+        return replayId;
+    }
+
+    public void setReplayId(String replayId) {
+        this.replayId = replayId;
+    }
+
+    private String replayId;
 
     public String getPublicationTime() {
         return publicationTime;

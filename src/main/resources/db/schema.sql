@@ -1,17 +1,5 @@
 -- SET NAMES utf8;
 
--- 用户表
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user`
-(
-  `id`         bigint(20) NOT NULL AUTO_INCREMENT,
-  `username`   varchar(50)  DEFAULT NULL comment '用户名',
-  `password`   varchar(255) DEFAULT NULL comment '密码',
-  `nickname`   varchar(50)  DEFAULT NULL comment '用户昵称',
-  `head_portrait` varchar(200) DEFAULT '' comment '头像',
-  `personal_signature` varchar(200) DEFAULT '' comment '个性签名',
-  PRIMARY KEY (`id`)
-);
 
 -- 歌单表
 DROP TABLE IF EXISTS `song_sheet`;
@@ -23,6 +11,18 @@ CREATE TABLE `song_sheet`
   `time` varchar(50) DEFAULT NULL comment '发布时间',
   `click_throughput` bigint(50) DEFAULT NULL comment '点击量',
   `state` varchar(50) DEFAULT NULL comment '是否公布',
+  PRIMARY KEY (`id`)
+);
+-- 用户表
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`
+(
+  `id`         bigint(20) NOT NULL AUTO_INCREMENT,
+  `username`   varchar(50)  DEFAULT NULL comment '用户名',
+  `password`   varchar(255) DEFAULT NULL comment '密码',
+  `nickname`   varchar(50)  DEFAULT NULL comment '用户昵称',
+  `head_portrait` varchar(200) DEFAULT '' comment '头像',
+  `personal_signature` varchar(200) DEFAULT '' comment '个性签名',
   PRIMARY KEY (`id`)
 );
 

@@ -2,8 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hubu.work.H2_MyBatis.mapper.SongSheetMapper">
 
-    <select id="selectAll" resultType="com.hubu.work.H2_MyBatis.pojo.SongSheet">
+   <select id="selectAll" resultType="com.hubu.work.H2_MyBatis.pojo.SongSheet">
     select * from song_sheet;
     </select>
+
+    <insert id="addSongSheet">
+        insert into song_sheet(id, name, author, time,click_throughput,state)
+        values(#{name},#{author},#{time},#{click_throughput},#{state})
+    </insert>
+
+    <select id="selectAllBySongSheetName" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs
+        where ascription=#{name}
+    </select>
+
+    <select id="querySongSheetById" resultType="com.hubu.work.H2_MyBatis.pojo.SongSheet">
+        select * from song_sheet
+        where id=#{id}
+    </select>
+
+    <update id="addClickThroughput">
+        update song_sheet set click_throughput=#{click_throughput} where id=#{id}
+    </update>
 
 </mapper>

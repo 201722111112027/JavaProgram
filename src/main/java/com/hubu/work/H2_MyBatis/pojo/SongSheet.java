@@ -5,6 +5,7 @@ public class SongSheet {
     private String name;
     private String author;
     private String time;
+
     public Integer getClick_throughput() {
         return click_throughput;
     }
@@ -47,6 +48,7 @@ public class SongSheet {
     public void setTime(String time) {
         this.time = time;
     }
+
 
     public String getState() {
         return state;

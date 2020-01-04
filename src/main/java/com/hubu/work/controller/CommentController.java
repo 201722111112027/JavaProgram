@@ -19,9 +19,16 @@ public class CommentController {
     Utils utils;
 
     @ApiOperation("查询全部评论")
-    @PostMapping("/selectAllComments")
-    public List<Comment> selectAllComments(@RequestParam String aim){
-        List<Comment> comments=commentService.selectAllComments(aim);
+    @PostMapping("/selectAllCommentsByName")
+    public List<Comment> selectAllCommentsByName(@RequestParam String aim){
+        List<Comment> comments=commentService.selectAllCommentsByName(aim);
+        return comments;
+    }
+
+    @ApiOperation("查询对应评论ID的全部回复评论")
+    @PostMapping("/selectAllCommentsById")
+    public List<Comment> selectAllCommentsById(@RequestParam Integer id){
+        List<Comment> comments=commentService.selectAllCommentsById(id);
         return comments;
     }
 

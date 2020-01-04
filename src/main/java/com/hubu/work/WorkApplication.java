@@ -10,7 +10,6 @@ public class WorkApplication {
 
     SpringApplication.run(WorkApplication.class, args);
 
-//    System.out.println("尝试一下提交");
   }
 
 }

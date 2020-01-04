@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hubu.work.H2_MyBatis.mapper.SongsMapper">
+
+    <select id="querySongByName" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs
+        where name like "%#{name}%"
+    </select>
+
+    <select id="querySongByAuthor" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs
+        where author like "%#{author}%"
+    </select>
+
+    <select id="querySongByAscription" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs
+        where ascription like "%#{ascription}%"
+    </select>
+
+    <update id="addClickThroughput">
+        update songs set click_throughput=#{click_throughput} where id=#{id}
+    </update>
+
+    <select id="querySongById" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs where ID=#{id}
+    </select>
+
+</mapper>

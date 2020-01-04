@@ -26,6 +26,16 @@ public class Comment {
 
     private String replayId;
 
+    public String getReplayId() {
+        return replayId;
+    }
+
+    public void setReplayId(String replayId) {
+        this.replayId = replayId;
+    }
+
+    private String replayId;
+
     public String getPublicationTime() {
         return publicationTime;
     }

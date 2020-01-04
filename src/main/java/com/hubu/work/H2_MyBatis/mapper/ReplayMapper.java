@@ -16,4 +16,7 @@ public interface ReplayMapper {
 
     //对回复评论进行点赞
     void givePraise(Comment comment);
+
+    //根据ID查询评论全部信息
+    Comment queryCommentById(Integer id);
 }

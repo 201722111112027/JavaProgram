@@ -47,8 +47,16 @@ public class SongSheetController {
     public void addClickThroughput(@RequestBody SongSheet songSheet){
         SongSheet songSheet1 = songSheetService.querySongSheetById(songSheet.getId());
         Integer click_throughput = songSheet1.getClick_throughput();
-        click_throughput+=click_throughput;
+        click_throughput=click_throughput+1;
         songSheet.setClick_throughput(click_throughput);
         songSheetService.addClickThroughput(songSheet);
     }
+
+    @ApiOperation("按照ID值查询歌单信息")
+    @PostMapping("/querySongSheetById")
+    public SongSheet querySongSheetById(@RequestParam Integer id){
+        SongSheet songSheet = songSheetService.querySongSheetById(id);
+        return songSheet;
+    }
+
 }

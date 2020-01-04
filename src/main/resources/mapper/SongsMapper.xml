@@ -4,17 +4,24 @@
 
     <select id="querySongByName" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
         select * from songs
-        where name like "%#{name}%"
+        where name like CONCAT('%',#{name},'%')
     </select>
 
     <select id="querySongByAuthor" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
         select * from songs
-        where author like "%#{author}%"
+         where author like CONCAT('%',#{author},'%')
     </select>
 
     <select id="querySongByAscription" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
         select * from songs
-        where ascription like "%#{ascription}%"
+        where ascription like CONCAT('%',#{ascription},'%')
+    </select>
+
+    <select id="querySongByAnything" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs where
+        author like CONCAT('%',#{string},'%')
+        or name like CONCAT('%',#{string},'%')
+        or ascription like CONCAT('%',#{string},'%')
     </select>
 
     <update id="addClickThroughput">
@@ -25,4 +32,7 @@
         select * from songs where ID=#{id}
     </select>
 
+    <select id="queryAllSongs" resultType="com.hubu.work.H2_MyBatis.pojo.Songs">
+        select * from songs;
+    </select>
 </mapper>

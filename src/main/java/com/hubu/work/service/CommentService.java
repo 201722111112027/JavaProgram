@@ -20,8 +20,13 @@ public class CommentService {
     }
 
     //查询对应评论ID的全部回复评论
-    public List<Comment> selectAllCommentsById(Integer id){
+    public List<Comment> selectAllCommentsById(String id){
         List<Comment> comments=commentMapper.selectAllCommentsById(id);
+        return comments;
+    }
+
+    public Comment selectCommentById(Integer  id){
+        Comment comments=commentMapper.selectCommentById(id);
         return comments;
     }
 
@@ -30,7 +35,7 @@ public class CommentService {
         commentMapper.addComment(comment);
     }
 
-    //对一级评论尽心点赞
+    //对一级评论点赞
     public void addPraise(Comment comment){
         commentMapper.addPraise(comment);
     }

@@ -10,5 +10,7 @@ INSERT INTO `songs` (id, name, author, url,url_words,click_throughput,ascription
 
 INSERT INTO `comment` (id, author, content,praisePoints,publicationTime,commentAim) VALUES (1, 'gxm', '好听', 22,'2019-12-19','十年');
 INSERT INTO `comment` (id, author, content,praisePoints,publicationTime,replayId) VALUES (2, 'whm', '认同', 21,'2019-12-19',1);
+INSERT INTO `comment` (id, author, content,praisePoints,publicationTime,replayId) VALUES (3, 'lx', '点赞', 21,'2019-12-19',1);
+INSERT INTO `comment` (id, author, content,praisePoints,publicationTime,replayId) VALUES (4, 'lx', '点赞', 21,'2019-12-19',1);
 
 COMMIT;

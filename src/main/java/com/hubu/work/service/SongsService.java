@@ -42,4 +42,14 @@ public class SongsService {
         Songs songs = songsMapper.querySongById(id);
         return songs;
     }
+    public List<Songs> queryAllSongs(){
+        List<Songs> list=songsMapper.queryAllSongs();
+        return list;
+    }
+
+    //按照歌曲的作者或者歌名或者歌单查找
+    public List<Songs> querySongByAnything(String string){
+        List<Songs> songsList = songsMapper.querySongByAnything(string);
+        return songsList;
+    }
 }

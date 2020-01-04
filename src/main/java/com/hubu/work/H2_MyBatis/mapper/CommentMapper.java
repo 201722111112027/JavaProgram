@@ -7,7 +7,15 @@ import java.util.List;
 
 @Mapper
 public interface CommentMapper {
-    List<Comment> selectAllComments();
+
+    List<Comment> selectAllCommentsByName(String aim);
+
+    //查询对应评论ID的全部回复评论
+    List<Comment> selectAllCommentsById(String  id);
+
+    //根据ID查询评论
+    Comment selectCommentById(Integer id);
+
 
     void addComment(Comment comment);
 }

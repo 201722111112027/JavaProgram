@@ -1,5 +1,9 @@
 package com.hubu.work.H2_MyBatis.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class Comment {
     private Integer id;
     private String author;
@@ -74,5 +78,18 @@ public class Comment {
 
     public void setPraisePoints(Integer praisePoints) {
         this.praisePoints = praisePoints;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id=" + id +
+                ", author='" + author + '\'' +
+                ", content='" + content + '\'' +
+                ", commentAim='" + commentAim + '\'' +
+                ", praisePoints=" + praisePoints +
+                ", publicationTime='" + publicationTime + '\'' +
+                ", replayId='" + replayId + '\'' +
+                '}';
     }
 }

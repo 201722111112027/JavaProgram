@@ -20,7 +20,7 @@ public class ReplayController {
 
     @ApiOperation("查询对应ID的全部回复")
     @PostMapping("/selectAllComments")
-    public List<Comment> selectAllReplayById(@RequestParam Integer id){
+    public List<Comment> selectAllReplayById(@RequestParam String id){
         List<Comment> replays = replayService.selectAllReplayById(id);
         return replays;
     }
@@ -32,7 +32,7 @@ public class ReplayController {
         comment.setPublicationTime(utils.getTime());
         comment.setCommentAim("");
 
-        replayService.addRplay(comment);
+        replayService.addReplay(comment);
     }
 
     @ApiOperation("点赞回复评论")

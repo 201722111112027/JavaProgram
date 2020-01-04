@@ -27,9 +27,16 @@ public class CommentController {
 
     @ApiOperation("查询对应评论ID的全部回复评论")
     @PostMapping("/selectAllCommentsById")
-    public List<Comment> selectAllCommentsById(@RequestParam Integer id){
+    public List<Comment> selectAllCommentsById(@RequestParam String id){
         List<Comment> comments=commentService.selectAllCommentsById(id);
         return comments;
+    }
+
+    @ApiOperation("根据ID值查询评论信息")
+    @PostMapping("/selectCommentById")
+    public Comment selectCommentById(@RequestParam Integer id){
+        Comment comment = commentService.selectCommentById(id);
+        return comment;
     }
 
     @ApiOperation("评论歌曲")
@@ -37,7 +44,7 @@ public class CommentController {
     public void addComments(@RequestBody Comment comment){
         comment.setPraisePoints(0);
         comment.setPublicationTime(utils.getTime());
-        comment.setReplayId("");
+        comment.setReplayId(" ");
         commentService.addComment(comment);
     }
 

@@ -19,8 +19,8 @@ public class SongsController {
     Utils utils;
 
     @ApiOperation("根据歌名搜索歌曲")
-    @PostMapping("/querySongById")
-    public List<Songs> querySongById(@RequestParam String name){
+    @PostMapping("/querySongByName")
+    public List<Songs> querySongByName(@RequestParam String name){
         List<Songs> songsList = songsService.querySongByName(name);
         return songsList;
     }
@@ -36,6 +36,27 @@ public class SongsController {
     @PostMapping("/querySongByAscription")
     public List<Songs> querySongByAscription(@RequestParam String ascription){
         List<Songs> songsList = songsService.querySongByAscription(ascription);
+        return songsList;
+    }
+
+    @ApiOperation("查询所有的歌曲")
+    @PostMapping("/queryAllSongs")
+    public List<Songs> queryAllSongs(){
+        List<Songs> songsList = songsService.queryAllSongs();
+        return songsList;
+    }
+
+    @ApiOperation("按照歌曲ID查找歌曲")
+    @PostMapping("/querySongById")
+    public Songs querySongById(@RequestParam Integer id){
+        Songs songs = songsService.querySongById(id);
+        return songs;
+    }
+
+    @ApiOperation("按照作者或者歌曲名或者歌单名查找歌曲")
+    @PostMapping("/querySongByAnything")
+    public List<Songs> querySongByAnything(@RequestParam String string){
+        List<Songs> songsList = songsService.querySongByAnything(string);
         return songsList;
     }
 

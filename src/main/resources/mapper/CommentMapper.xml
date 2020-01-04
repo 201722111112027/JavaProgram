@@ -7,8 +7,8 @@
     </select>
 
     <insert id="addComment">
-        insert into comment (id,commentAim,author,content,praisePoints,replayId)
-        values (#{id},#{commentAim},#{author},#{content} ,#{praisePoints},#{publicationTime},#{replayId})
+        insert into comment (commentAim,author,content,praisePoints,publicationTime,replayId)
+        values (#{commentAim},#{author},#{content} ,#{praisePoints},#{publicationTime},#{replayId})
     </insert>
 
     <select id="selectAllCommentsById" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">

@@ -18,7 +18,7 @@ public class CommentController {
     @Autowired
     Utils utils;
 
-    @ApiOperation("查询全部评论")
+    @ApiOperation("查询对应歌曲全部评论")
     @PostMapping("/selectAllCommentsByName")
     public List<Comment> selectAllCommentsByName(@RequestParam String aim){
         List<Comment> comments=commentService.selectAllCommentsByName(aim);
@@ -37,7 +37,7 @@ public class CommentController {
     public void addComments(@RequestBody Comment comment){
         comment.setPraisePoints(0);
         comment.setPublicationTime(utils.getTime());
-        comment.setReplayId("");
+        comment.setReplayId(" ");
         commentService.addComment(comment);
     }
 

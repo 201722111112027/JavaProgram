@@ -28,6 +28,17 @@ public class UserController {
     public int login(User user) {
         return userService.login(user);
     }
+    // public PageBean(List<T> list){
+    //if (list instanceof Page) {
+    //  Page<T> page = (Page<T>) list;
+    //   this.pageNum = page.getPageNum();
+    //    this.pageSize = page.getPageSize();
+    //    this.total = page.getTotal();
+    //    this.pages = page.getPages();
+    //    this.list = page;
+    //    this.size = page.size();
+    //  }
+    //}
 
     @ApiOperation("用户注册")
     @GetMapping(value = "registerUser")

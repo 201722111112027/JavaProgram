@@ -1,5 +1,8 @@
 package com.hubu.work.H2_MyBatis.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SongSheet {
     private Integer id;
     private String name;
@@ -56,5 +59,17 @@ public class SongSheet {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "SongSheet{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", time='" + time + '\'' +
+                ", click_throughput=" + click_throughput +
+                ", state='" + state + '\'' +
+                '}';
     }
 }

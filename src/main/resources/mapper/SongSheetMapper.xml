@@ -7,7 +7,7 @@
     </select>
 
     <insert id="addSongSheet">
-        insert into song_sheet(id, name, author, time,click_throughput,state)
+        insert into song_sheet(name, author, time,click_throughput,state)
         values(#{name},#{author},#{time},#{click_throughput},#{state})
     </insert>
 

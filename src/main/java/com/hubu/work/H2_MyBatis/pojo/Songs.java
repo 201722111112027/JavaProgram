@@ -1,5 +1,8 @@
 package com.hubu.work.H2_MyBatis.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Songs {
     public Integer getId() {
         return id;
@@ -75,4 +78,17 @@ public class Songs {
 
     private String state;
 
+    @Override
+    public String toString() {
+        return "Songs{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", url='" + url + '\'' +
+                ", url_words='" + url_words + '\'' +
+                ", click_throughput=" + click_throughput +
+                ", ascription='" + ascription + '\'' +
+                ", state='" + state + '\'' +
+                '}';
+    }
 }

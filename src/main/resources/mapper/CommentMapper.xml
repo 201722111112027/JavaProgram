@@ -15,6 +15,10 @@
         select * from comment where replayId=#{id}
     </select>
 
+    <select id="selectCommentById" resultType="com.hubu.work.H2_MyBatis.pojo.Comment">
+        select * from comment where id=#{id}
+    </select>
+
     <update id="addPraise">
         update comment set praisePoints=#{praisePoints} where id=#{id}
     </update>

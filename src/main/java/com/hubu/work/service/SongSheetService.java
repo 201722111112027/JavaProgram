@@ -38,6 +38,7 @@ public class SongSheetService {
 
     //增加歌单点击量
     public void addClickThroughput(SongSheet songSheet){
+
         songSheetMapper.addClickThroughput(songSheet);
     }
 }

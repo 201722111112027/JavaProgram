@@ -1,6 +1,8 @@
 package com.hubu.work.H2_MyBatis.pojo;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class User {
 
   private Integer id;
@@ -56,5 +58,17 @@ public class User {
 
   public void setPersonal_signature(String personal_signature) {
     this.personal_signature = personal_signature;
+  }
+
+  @Override
+  public String toString() {
+    return "User{" +
+            "id=" + id +
+            ", username='" + username + '\'' +
+            ", password='" + password + '\'' +
+            ", nickname='" + nickname + '\'' +
+            ", head_portrait='" + head_portrait + '\'' +
+            ", personal_signature='" + personal_signature + '\'' +
+            '}';
   }
 }

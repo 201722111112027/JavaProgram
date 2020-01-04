@@ -12,6 +12,7 @@ public class UserService {
   @Autowired
   UserMapper userMapper;
 
+  //查询所有的用户
   public List<User> selectAll(){
     return userMapper.selectAll();
   }

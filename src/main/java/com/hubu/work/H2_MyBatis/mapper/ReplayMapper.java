@@ -9,7 +9,7 @@ import java.util.List;
 public interface ReplayMapper {
 
     //根据Id查询对应评论的全部回复
-    List<Comment> selectAllReplayById(Integer id);
+    List<Comment> selectAllReplayById(String  id);
 
     //对一级评论进行评论
     void addReplay(Comment comment);

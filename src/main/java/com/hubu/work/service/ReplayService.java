@@ -13,12 +13,13 @@ public class ReplayService {
     ReplayMapper replayMapper;
 
     //根据一级评论ID查询对应回复
-    public List<Comment> selectAllReplayById(Integer id){
+    public List<Comment> selectAllReplayById(String  id){
+
         return replayMapper.selectAllReplayById(id);
     }
 
     //评论一级评论
-    public void addRplay(Comment comment){
+    public void addReplay(Comment comment){
         replayMapper.addReplay(comment);
     }
 

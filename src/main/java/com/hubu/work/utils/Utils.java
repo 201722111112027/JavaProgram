@@ -11,8 +11,8 @@ public class Utils {
   //获取当前系统时间
   public String getTime(){
     Date date=new Date();
-    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss");
-//    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+//    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd:HH:mm:ss");
+    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
     String time=simpleDateFormat.format(date);
     return time;
   }

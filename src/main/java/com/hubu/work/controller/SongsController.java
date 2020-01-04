@@ -39,6 +39,20 @@ public class SongsController {
         return songsList;
     }
 
+    @ApiOperation("查询所有的歌曲")
+    @PostMapping("/queryAllSongs")
+    public List<Songs> queryAllSongs(){
+        List<Songs> songsList = songsService.queryAllSongs();
+        return songsList;
+    }
+
+    @ApiOperation("按照作者或者歌曲名或者歌单名查找歌曲")
+    @PostMapping("/querySongByAnything")
+    public List<Songs> querySongByAnything(@RequestParam String string){
+        List<Songs> songsList = songsService.querySongByAnything(string);
+        return songsList;
+    }
+
     @ApiOperation("增加歌曲播放量")
     @PostMapping("/addClickThroughput")
     public void addClickThroughput(@RequestBody Songs songs){
